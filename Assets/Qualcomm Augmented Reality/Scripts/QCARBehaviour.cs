@@ -1,7 +1,7 @@
 /*==============================================================================
-Copyright (c) 2010-2013 QUALCOMM Austria Research Center GmbH.
+Copyright (c) 2010-2014 Qualcomm Connected Experiences, Inc.
 All Rights Reserved.
-Confidential and Proprietary - QUALCOMM Austria Research Center GmbH.
+Confidential and Proprietary - Qualcomm Connected Experiences, Inc.
 ==============================================================================*/
 
 using System;
@@ -17,4 +17,20 @@ using UnityEngine;
 [RequireComponent(typeof(Camera))]
 public class QCARBehaviour : QCARAbstractBehaviour
 {
+    protected override void Awake()
+    {
+        IUnityPlayer unityPlayer = new NullUnityPlayer();
+
+        // instantiate the correct UnityPlayer for the current platform
+        if (Application.platform == RuntimePlatform.Android)
+            unityPlayer = new AndroidUnityPlayer();
+        else if (Application.platform == RuntimePlatform.IPhonePlayer)
+            unityPlayer = new IOSUnityPlayer();
+        else if (QCARRuntimeUtilities.IsPlayMode())
+            unityPlayer = new PlayModeUnityPlayer();
+
+        SetUnityPlayerImplementation(unityPlayer);
+
+        base.Awake();
+    }
 }

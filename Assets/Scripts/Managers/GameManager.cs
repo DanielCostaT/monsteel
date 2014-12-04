@@ -33,7 +33,7 @@ namespace Assets.Scripts.Core {
         public static void SetState (GameStateHandler myState) {
             GameManager.instance.updateState(myState);
         }
-                
+         
         #region STATIC_DEBUG
 
         void initDebug () {
@@ -84,11 +84,6 @@ namespace Assets.Scripts.Core {
     #if UNITY_EDITOR
         public bool stateChanged = false;
     #endif
-
-        public AudioSource audio1;
-        public AudioSource audio2;
-        public AudioSource audio3;
-        public List<AudioClip> audioPool;
 
         // Use this for initialization
         void Awake() {
@@ -163,15 +158,6 @@ namespace Assets.Scripts.Core {
             OnManagersInitialized("Comic");
         }
 
-        public void SetAutoFocus () {
-            StartCoroutine("StartAutoFocus");
-        }
-
-        IEnumerator StartAutoFocus () {
-            yield return new WaitForSeconds(1.0f);
-            CameraDevice.Instance.SetFocusMode(CameraDevice.FocusMode.FOCUS_MODE_CONTINUOUSAUTO);
-        }
-
         // Starts the game updating a current state to begin
         void StartGame() {
             currentScene = Application.loadedLevelName;
@@ -180,11 +166,6 @@ namespace Assets.Scripts.Core {
 
             OnGameStart();
             loadScene();      
-        }
-
-
-        void StartRA () {
-            //updateState(GameStateHandler.PotionRA);
         }
 
         // Updates the current State of the game to the received one, saving the current as a previous
@@ -312,9 +293,8 @@ namespace Assets.Scripts.Core {
             GUIManager.instance.GetUI("LoaderTop").GetPositionTweener().ResetToBeginning();
             GUIManager.instance.GetUI("LoaderBot").GetPositionTweener().PlayReverse();
             GUIManager.instance.GetUI("LoaderBot").GetPositionTweener().ResetToBeginning();
-            yield return new WaitForSeconds(1.0f);
-            audio1.PlayOneShot(audioPool[5]);
-            yield return new WaitForSeconds(2.0f);
+
+            yield return new WaitForSeconds(3.0f);
 
             //(changed load level async to additive async while testing new load)
             AsyncOperation async = Application.LoadLevelAsync(levelToLoad);
@@ -337,43 +317,6 @@ namespace Assets.Scripts.Core {
 
             OnSceneLoad();
             yield return new WaitForSeconds(1.0f);
-            FindObjectOfType<AudioSource>().PlayOneShot(audioPool[11]);
-        }
-
-        public void PlayComic (string comic) {
-            StopAllCoroutines();
-            audio1.Stop();
-            audio2.Stop();
-            audio3.Stop();
-            StartCoroutine(comic);
-            //Debug.Log("AOIHHHHHHHHHHHHHHHHHHA");
-        }
-
-        IEnumerator PlayComic1 () {
-            audio1.clip=audioPool[9];
-            audio1.Play();
-            yield return new WaitForSeconds(7.5f);
-            audio1.Stop();
-            yield return new WaitForSeconds(1.5f);
-            audio1.PlayOneShot(audioPool[4]);
-        }
-
-        IEnumerator PlayComic2 () {
-            audio3.clip = audioPool[3];
-            audio3.Play();
-            yield return null;
-        }
-
-        IEnumerator PlayComic3 () {
-            audio1.clip = audioPool[14];
-            audio1.Play();
-            yield return null;
-        }
-
-        IEnumerator PlayComic4 () {
-            audio1.clip = audioPool[12];
-            audio1.Play();
-            yield return null;
         }
     }
 }

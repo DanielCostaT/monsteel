@@ -1,7 +1,7 @@
 /*==============================================================================
-Copyright (c) 2010-2013 QUALCOMM Austria Research Center GmbH.
+Copyright (c) 2010-2014 Qualcomm Connected Experiences, Inc.
 All Rights Reserved.
-Confidential and Proprietary - QUALCOMM Austria Research Center GmbH.
+Confidential and Proprietary - Qualcomm Connected Experiences, Inc.
 ==============================================================================*/
 
 using UnityEngine;
@@ -24,14 +24,13 @@ public class DefaultInitializationErrorHandler : MonoBehaviour
 
     #region UNTIY_MONOBEHAVIOUR_METHODS
 
-    void Start()
+    void Awake()
     {
         // Check for an initialization error on start.
-        QCARUnity.InitError errorCode = QCARUnity.CheckInitializationError();
-        if (errorCode != QCARUnity.InitError.INIT_SUCCESS)
+        QCARAbstractBehaviour qcarBehaviour = (QCARAbstractBehaviour)FindObjectOfType(typeof(QCARAbstractBehaviour));
+        if (qcarBehaviour)
         {
-            SetErrorCode(errorCode);
-            SetErrorOccurred(true);
+            qcarBehaviour.RegisterQCARInitErrorCallback(OnQCARInitializationError);
         }
     }
 
@@ -42,6 +41,18 @@ public class DefaultInitializationErrorHandler : MonoBehaviour
         if (mErrorOccurred)
             GUI.Window(0, new Rect(0, 0, Screen.width, Screen.height),
                                    DrawWindowContent, WINDOW_TITLE);
+    }
+
+    /// <summary>
+    /// When this game object is destroyed, it unregisters itself as event handler
+    /// </summary>
+    void OnDestroy()
+    {
+        QCARAbstractBehaviour qcarBehaviour = (QCARAbstractBehaviour)FindObjectOfType(typeof(QCARAbstractBehaviour));
+        if (qcarBehaviour)
+        {
+            qcarBehaviour.UnregisterQCARInitErrorCallback(OnQCARInitializationError);
+        }
     }
 
     #endregion // UNTIY_MONOBEHAVIOUR_METHODS
@@ -59,8 +70,7 @@ public class DefaultInitializationErrorHandler : MonoBehaviour
 
         // Create centered button with 50/50 size and 10 pixel distance from
         // other controls and window border.
-        if (GUI.Button(new Rect(Screen.width / 2 - 75, Screen.height - 60,
-                                    150, 50), "Close"))
+        if (GUI.Button(new Rect(Screen.width / 2 - 75, Screen.height - 60, 150, 50), "Close"))
             Application.Quit();
     }
 
@@ -96,4 +106,19 @@ public class DefaultInitializationErrorHandler : MonoBehaviour
     }
 
     #endregion // PRIVATE_METHODS
+
+
+
+    #region QCAR_lifecycle_events
+
+    public void OnQCARInitializationError(QCARUnity.InitError initError)
+    {
+        if (initError != QCARUnity.InitError.INIT_SUCCESS)
+        {
+            SetErrorCode(initError);
+            SetErrorOccurred(true);
+        }
+    }
+
+    #endregion // QCAR_lifecycle_events
 }

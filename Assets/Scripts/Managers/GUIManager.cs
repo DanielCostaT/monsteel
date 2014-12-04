@@ -41,39 +41,18 @@ namespace Assets.Scripts.Core {
 
         public void ButtonCallback (string buttonName) {
             GameManager.Debugger("Button click callback : " + buttonName);
-            string methodName = buttonName + "Click";
 
-            MethodInfo myMethod = this.GetType().GetMethod(methodName);
+            MethodInfo myMethod = this.GetType().GetMethod(buttonName + "Click");
             myMethod.Invoke(this,null);
         }
-
-        public void Q3_frank_estilingueClick () {
-            GameManager.SetState(GameStateHandler.MiniGame);
-        }
-
-        public void SmokeButtonClick () {
-            GameManager.instance.audio1.PlayOneShot(GameManager.instance.audioPool[0]);
-            GameObject.Find("SmokeFX").GetComponent<ParticleSystem>().Stop();
-            GetUI("Q2_morcego").GetAlphaTweener().PlayForward();
-            GetUI("Q2_morcego").GetPositionTweener().PlayForward();
-            GetUI("Q2_morcego").GetScaleTweener().PlayForward();
-            GetUI("Q2_puf").GetAlphaTweener().PlayForward();
-            GetUI("Q2_fumaca").GetAlphaTweener().PlayForward();
-            GetUI("Q2_balao").GetAlphaTweener().PlayForward();
-        }
-
+        
         public void StartButtonClick () {
-            GameManager.instance.audio1.PlayOneShot(GameManager.instance.audioPool[15]);
             GetUI("StartScreen").GetAlphaTweener().PlayForward();
             ComicManager.instance.StartPages();
         }
 
         public void BackButtonClick () {
             GameManager.SetState(GameStateHandler.Comic);
-        }
-
-        public void FrankDepoimentoClick () {
-            GameManager.SetState(GameStateHandler.Testimonial);
         }
 
         public void PageRightButtonClick () {

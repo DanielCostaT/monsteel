@@ -133,16 +133,16 @@ namespace Assets.Scripts.Core{
         void SoundCheck() {            
             switch (ActivePage) {
                 case 0:
-                    GameManager.instance.PlayComic("PlayComic1");
+                    //GameManager.instance.PlayComic("PlayComic1");
                     break;
                 case 1:
-                    GameManager.instance.PlayComic("PlayComic2");
+                    //GameManager.instance.PlayComic("PlayComic2");
                     break;
                 case 2:
-                    GameManager.instance.PlayComic("PlayComic3");
+                    //GameManager.instance.PlayComic("PlayComic3");
                     break;
                 case 3:
-                    GameManager.instance.PlayComic("PlayComic4");
+                    //GameManager.instance.PlayComic("PlayComic4");
                     break;
                 default: 
                     break;
