@@ -25,8 +25,7 @@ namespace Assets.Scripts.Core{
         public int FirstPage { get; set; } // First page of the comic
         public int LastPage { get; set; } // Last page of the comic
         
-        
-
+        // Check if the comic was just started or it's just resuming
         public void StartCheck () {
             if (ActivePage > 0) {
                 GUIManager.instance.GetUI("StartScreen").Display = false;
@@ -35,6 +34,7 @@ namespace Assets.Scripts.Core{
             }
         }
 
+        // Load all comic pages
         public void StartPages () {
             StartCoroutine("StartLoadedPages");
         }
@@ -43,13 +43,15 @@ namespace Assets.Scripts.Core{
             PageActiveAll();
         }
 
+        // Set up the view center of the thumbnails
+        // TODO : Fix the correct alignment for different THUMBMAX values
         public void OnComicStart () {
             ActivePage = 0;
-            viewCenter = THUMBMAX / 2;
+            viewCenter = THUMBMAX / 2-1;
         }
 
+        // 
         public void OnPageLoad () {
-
             ComicPages = new List<GameObject>();
             ComicThumbs = new List<ScrollContent>();
 
@@ -116,9 +118,10 @@ namespace Assets.Scripts.Core{
             ComicThumbs[ActivePage + 1].PlayAlphaForward();
         }
 
+        // Activate all pages and set to viewed previous pages's thumbnails, updating current view
         void PageActiveAll () {
             ComicPages[ActivePage].SetActive(true);
-            SoundCheck();
+            //SoundCheck();
             ComicThumbs[ActivePage].PlayAlphaForward();
             ComicThumbs[ActivePage+1].PlayAlphaForward();
             ComicThumbs[ActivePage].PlayResizeForward();
@@ -149,6 +152,7 @@ namespace Assets.Scripts.Core{
             }
         }
 
+        // Updates the current thumbnail list's view
         void UpdateView () {
             ComicThumbs[viewCenter].CenterView();
         }

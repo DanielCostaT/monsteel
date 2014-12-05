@@ -1,0 +1,137 @@
+fileFormatVersion: 2
+guid: 2f0f134b8d7302949a6bf7ed30f88661
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Balao1_Q1P1
+    21300002: Balao1_Q2P1
+    21300004: Puf_Q2P1
+    21300006: Morcego_Q2P1
+    21300008: Fumaca_Q2P1
+    21300010: Vela2_Q1P1
+    21300012: Vela1_Q1P1
+    21300014: Vela1_Q2P1
+    21300016: Vela2_Q2P1
+    21300018: Vela1_Q2_P1
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: 12
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: -1
+    aniso: 1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 5
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Balao1_Q1P1
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 852
+        width: 247
+        height: 172
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Balao1_Q2P1
+      rect:
+        serializedVersion: 2
+        x: 247
+        y: 784
+        width: 514
+        height: 240
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Puf_Q2P1
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 870
+        width: 179
+        height: 137
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Morcego_Q2P1
+      rect:
+        serializedVersion: 2
+        x: 675
+        y: 588
+        width: 345
+        height: 196
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Fumaca_Q2P1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 567
+        width: 554
+        height: 216
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Vela2_Q1P1
+      rect:
+        serializedVersion: 2
+        x: 447
+        y: 0
+        width: 415
+        height: 563
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Vela1_Q1P1
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 0
+        width: 415
+        height: 563
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Vela1_Q2_P1
+      rect:
+        serializedVersion: 2
+        x: 849
+        y: 0
+        width: 175
+        height: 539
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 

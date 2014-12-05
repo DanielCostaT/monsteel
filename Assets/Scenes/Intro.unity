@@ -284,7 +284,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scalingStyle: 0
-  manualHeight: 720
+  manualHeight: 1536
   minimumHeight: 1440
   maximumHeight: 1440
   adjustByDPI: 0
@@ -981,13 +981,13 @@ MonoBehaviour:
   updateAnchors: 1
   mColor: {r: 1, g: 1, b: 1, a: 1}
   mPivot: 4
-  mWidth: 2567
-  mHeight: 1447
+  mWidth: 2560
+  mHeight: 1540
   mDepth: 2
   autoResizeBoxCollider: 0
   hideIfOffScreen: 0
   keepAspectRatio: 0
-  aspectRatio: 1.77401519
+  aspectRatio: 1.66233766
   mType: 0
   mFillDirection: 4
   mFillAmount: 1
@@ -1840,26 +1840,6 @@ MonoBehaviour:
     Prev: 01000000
   currentScene: 
   stateChanged: 0
-  audio1: {fileID: 1286436963}
-  audio2: {fileID: 1286436962}
-  audio3: {fileID: 1286436961}
-  audioPool:
-  - {fileID: 8300000, guid: 0a8c0f0d026a6624d88de945444bfa95, type: 3}
-  - {fileID: 8300000, guid: 357ce2b614f13db459473253b63b8511, type: 3}
-  - {fileID: 8300000, guid: 36eb331e2dcce314d9638e462c4c62b5, type: 3}
-  - {fileID: 8300000, guid: 38c0021e99d868f41a8b2d82f3e4e66d, type: 3}
-  - {fileID: 8300000, guid: 6ebc812a73a49e74d961146dc671106b, type: 3}
-  - {fileID: 8300000, guid: 7fee7115be8d65a47ab8bc1d343ab03f, type: 3}
-  - {fileID: 8300000, guid: 9d389199051a51d4e84d8c195e314c25, type: 3}
-  - {fileID: 8300000, guid: a205003071a150a4faccf74001ac3012, type: 3}
-  - {fileID: 8300000, guid: a66243011b8b14f41bcbaf7728bd9780, type: 3}
-  - {fileID: 8300000, guid: dd52072322390e542901f53de8bfd297, type: 3}
-  - {fileID: 8300000, guid: dd5876c5c6f1e3f408caf909dc85fa6b, type: 3}
-  - {fileID: 8300000, guid: f6eec74489f1ab143a0c6f785067bd14, type: 3}
-  - {fileID: 8300000, guid: 19e3f3d8296492748ae844871f685f85, type: 3}
-  - {fileID: 8300000, guid: b6cab719e8cab6245b397e5fa3dc9797, type: 3}
-  - {fileID: 0}
-  - {fileID: 0}
 --- !u!4 &1286436960
 Transform:
   m_ObjectHideFlags: 0
@@ -2929,13 +2909,13 @@ MonoBehaviour:
   updateAnchors: 1
   mColor: {r: 1, g: 1, b: 1, a: 1}
   mPivot: 4
-  mWidth: 2567
-  mHeight: 1447
+  mWidth: 2560
+  mHeight: 1540
   mDepth: 1
   autoResizeBoxCollider: 0
   hideIfOffScreen: 0
   keepAspectRatio: 0
-  aspectRatio: 1.77401519
+  aspectRatio: 1.66233766
   mType: 0
   mFillDirection: 4
   mFillAmount: 1
