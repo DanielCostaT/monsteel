@@ -91,7 +91,7 @@ GameObject:
   - 65: {fileID: 2427744}
   - 114: {fileID: 2427743}
   - 114: {fileID: 2427741}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: IconPage13
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -409,7 +409,10 @@ GameObject:
   m_Component:
   - 4: {fileID: 8404432}
   - 114: {fileID: 8404433}
-  m_Layer: 8
+  - 114: {fileID: 8404434}
+  - 82: {fileID: 8404436}
+  - 114: {fileID: 8404435}
+  m_Layer: 0
   m_Name: Balao2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -426,7 +429,7 @@ Transform:
   m_LocalPosition: {x: -585, y: -323, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 2114536182}
+  m_Father: {fileID: 501588171}
   m_RootOrder: 2
 --- !u!114 &8404433
 MonoBehaviour:
@@ -480,6 +483,166 @@ MonoBehaviour:
   mShader: {fileID: 4800000, guid: 4452ae9431d4963409d269d31d79c83d, type: 3}
   mBorder: {x: 0, y: 0, z: 0, w: 0}
   nextSprite: {fileID: 0}
+--- !u!114 &8404434
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 8404431}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05f1b1516c6174942a3dcd70a1d59428, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tweenDatas:
+  - _targetType: UI2DSprite, Assembly-CSharp
+    target: {fileID: 8404433}
+    targetRoot: {fileID: 8404431}
+    _targetPath: Balao2.UI2DSprite
+    targetName: UI2DSprite
+    foldout: 1
+    isActive: 1
+    creationTime: 1
+    propDatas:
+    - _propType: System.Single, mscorlib
+      _pluginType: Holoville.HOTween.Plugins.Core.PlugFloat, HOTween
+      _valueType: System.Single, mscorlib
+      propName: alpha
+      shortPropType: Single
+      isRelative: 0
+      isActive: 1
+      endValVector2: {x: 0, y: 0}
+      endValVector3: {x: 0, y: 0, z: 0}
+      endValVector4: {x: 0, y: 0, z: 0, w: 0}
+      endValFloat: 0
+      endValInt: 0
+      endValString: 
+      endValColor: {r: 1, g: 1, b: 1, a: 1}
+      endValRect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 0
+        height: 0
+    duration: 1
+    tweenFrom: 1
+    paused: 0
+    autoKill: 1
+    updateType: 0
+    delay: 10
+    id: P1Q2
+    loopType: 0
+    loops: 1
+    timeScale: 1
+    easeType: 5
+    animationCurve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - time: 1
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    onCompleteActionType: 0
+    onCompletePlayId: 
+    onCompleteTarget: {fileID: 0}
+    onCompleteMethodName: 
+    onCompleteParmType: 0
+    onCompleteParmColor: {r: 0, g: 0, b: 0, a: 1}
+    onCompleteParmNumber: 0
+    onCompleteParmObject: {fileID: 0}
+    onCompleteParmQuaternion: {x: 0, y: 0, z: 0, w: 0}
+    onCompleteParmRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    onCompleteParmString: 
+    onCompleteParmVector2: {x: 0, y: 0}
+    onCompleteParmVector3: {x: 0, y: 0, z: 0}
+    onCompleteParmVector4: {x: 0, y: 0, z: 0, w: 0}
+  globalDelay: 0
+  globalTimeScale: 1
+  sortMode: 0
+  creationTime: 1
+  destroyAfterSetup: 0
+--- !u!114 &8404435
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 8404431}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b1d1781db90ea714fa71e17a56b2d4e6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!82 &8404436
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 8404431}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_audioClip: {fileID: 8300000, guid: e684d0171a22587438ece509334d0ca9, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
 --- !u!1 &11661125
 GameObject:
   m_ObjectHideFlags: 0
@@ -489,7 +652,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 11661126}
   - 114: {fileID: 11661127}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Q4_abobora
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -571,7 +734,7 @@ GameObject:
   - 114: {fileID: 20944807}
   - 114: {fileID: 20944809}
   - 65: {fileID: 20944810}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: PageRightButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -681,7 +844,7 @@ GameObject:
   - 114: {fileID: 29283387}
   - 65: {fileID: 29283389}
   - 114: {fileID: 29283388}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -783,7 +946,7 @@ GameObject:
   - 4: {fileID: 49185831}
   - 114: {fileID: 49185832}
   - 114: {fileID: 49185833}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: frank
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -902,7 +1065,7 @@ GameObject:
   - 4: {fileID: 77610971}
   - 114: {fileID: 77610972}
   - 114: {fileID: 77610973}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: BgAlpha
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1020,8 +1183,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 85145678}
   - 114: {fileID: 85145679}
-  m_Layer: 8
-  m_Name: Quadros
+  m_Layer: 0
+  m_Name: Quadro1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1039,10 +1202,10 @@ Transform:
   m_Children:
   - {fileID: 1477001459}
   - {fileID: 659612272}
-  - {fileID: 1664406193}
-  - {fileID: 2020246023}
+  - {fileID: 1595920407}
+  - {fileID: 1234395459}
   m_Father: {fileID: 2114536182}
-  m_RootOrder: 8
+  m_RootOrder: 0
 --- !u!114 &85145679
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1089,7 +1252,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 91362399}
   - 114: {fileID: 91362400}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Page11
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1169,7 +1332,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 133124332}
   - 114: {fileID: 133124333}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Quadro03
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1260,7 +1423,7 @@ GameObject:
   - 65: {fileID: 141581489}
   - 114: {fileID: 141581488}
   - 114: {fileID: 141581486}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: IconPage08
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1586,7 +1749,7 @@ GameObject:
   - 65: {fileID: 172752450}
   - 114: {fileID: 172752449}
   - 114: {fileID: 172752447}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: IconPage16
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1905,7 +2068,7 @@ GameObject:
   - 4: {fileID: 180306838}
   - 114: {fileID: 180306840}
   - 114: {fileID: 180306839}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: 2D Sprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2031,7 +2194,7 @@ GameObject:
   - 65: {fileID: 248177317}
   - 114: {fileID: 248177316}
   - 114: {fileID: 248177314}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: IconPage12
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2351,7 +2514,7 @@ GameObject:
   - 20: {fileID: 249273035}
   - 124: {fileID: 249273034}
   - 92: {fileID: 249273033}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: FXCamera
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2430,7 +2593,7 @@ GameObject:
   - 114: {fileID: 329342782}
   - 114: {fileID: 329342784}
   - 114: {fileID: 329342783}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: morcego
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2588,7 +2751,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 358069742}
   - 114: {fileID: 358069743}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: lobo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2670,7 +2833,7 @@ GameObject:
   - 114: {fileID: 367175035}
   - 114: {fileID: 367175034}
   - 114: {fileID: 367175033}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: mumiaFade
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2828,7 +2991,7 @@ GameObject:
   - 4: {fileID: 368165437}
   - 20: {fileID: 368165439}
   - 114: {fileID: 368165438}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Camera
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2906,7 +3069,7 @@ Camera:
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 256
+    m_Bits: 4294967295
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
@@ -2923,7 +3086,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 371886255}
   - 114: {fileID: 371886256}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3005,7 +3168,7 @@ GameObject:
   - 114: {fileID: 391364371}
   - 65: {fileID: 391364370}
   - 114: {fileID: 391364369}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: StartButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3121,7 +3284,7 @@ GameObject:
   - 65: {fileID: 406715586}
   - 114: {fileID: 406715585}
   - 114: {fileID: 406715583}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: IconPage07
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3439,7 +3602,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 408399229}
   - 114: {fileID: 408399230}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Quadro04
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3525,7 +3688,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 431562628}
   - 114: {fileID: 431562629}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3539,11 +3702,11 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 431562627}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.00007999, y: 1.00007999, z: 1.00007999}
+  m_LocalPosition: {x: 0, y: 45, z: 0}
+  m_LocalScale: {x: 1.00008011, y: 1.00008011, z: 1.00008011}
   m_Children: []
-  m_Father: {fileID: 2114536182}
-  m_RootOrder: 0
+  m_Father: {fileID: 912703766}
+  m_RootOrder: 6
 --- !u!114 &431562629
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3605,7 +3768,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 435513014}
   - 114: {fileID: 435513015}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Q4_balao
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3685,7 +3848,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 444348013}
   - 114: {fileID: 444348014}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: quadrado
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3765,7 +3928,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 448691423}
   - 114: {fileID: 448691424}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: FrankRA
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3809,7 +3972,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 452221627}
   - 114: {fileID: 452221628}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Page20
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3880,6 +4043,141 @@ MonoBehaviour:
   mShader: {fileID: 4800000, guid: e75727d9555d9d14ca51d91908c681bc, type: 3}
   mBorder: {x: 0, y: 0, z: 0, w: 0}
   nextSprite: {fileID: 0}
+--- !u!1 &455241607
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 455241609}
+  - 108: {fileID: 455241608}
+  m_Layer: 0
+  m_Name: Spotlight
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!108 &455241608
+Light:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 455241607}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Type: 0
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Intensity: .230000004
+  m_Range: 10
+  m_SpotAngle: 104.800003
+  m_CookieSize: 10
+  m_Shadows:
+    m_Type: 0
+    m_Resolution: -1
+    m_Strength: 1
+    m_Bias: .0500000007
+    m_Softness: 4
+    m_SoftnessFade: 1
+  m_Cookie: {fileID: 0}
+  m_DrawHalo: 0
+  m_ActuallyLightmapped: 0
+  m_Flare: {fileID: 0}
+  m_RenderMode: 0
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_Lightmapping: 1
+  m_ShadowSamples: 1
+  m_ShadowRadius: 0
+  m_ShadowAngle: 0
+  m_IndirectIntensity: 1
+  m_AreaSize: {x: 1, y: 1}
+--- !u!4 &455241609
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 455241607}
+  m_LocalRotation: {x: .608761609, y: 0, z: 0, w: .7933532}
+  m_LocalPosition: {x: -.360000014, y: 1.21000004, z: -.409999996}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 1
+--- !u!1 &501588170
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 501588171}
+  - 114: {fileID: 501588172}
+  m_Layer: 0
+  m_Name: Quadro2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &501588171
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 501588170}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1664406193}
+  - {fileID: 2020246023}
+  - {fileID: 8404432}
+  - {fileID: 1482216697}
+  - {fileID: 1390764655}
+  - {fileID: 1444786458}
+  - {fileID: 1216107515}
+  m_Father: {fileID: 2114536182}
+  m_RootOrder: 1
+--- !u!114 &501588172
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 501588170}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 858a20c1b21a3f94bb5b2d3b901c9aaf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  leftAnchor:
+    target: {fileID: 0}
+    relative: 0
+    absolute: 0
+  rightAnchor:
+    target: {fileID: 0}
+    relative: 1
+    absolute: 0
+  bottomAnchor:
+    target: {fileID: 0}
+    relative: 0
+    absolute: 0
+  topAnchor:
+    target: {fileID: 0}
+    relative: 1
+    absolute: 0
+  updateAnchors: 1
+  mColor: {r: 1, g: 1, b: 1, a: 1}
+  mPivot: 4
+  mWidth: 100
+  mHeight: 100
+  mDepth: 7
+  autoResizeBoxCollider: 0
+  hideIfOffScreen: 0
+  keepAspectRatio: 0
+  aspectRatio: 1
 --- !u!1 &519422540
 GameObject:
   m_ObjectHideFlags: 0
@@ -3890,7 +4188,7 @@ GameObject:
   - 4: {fileID: 519422541}
   - 114: {fileID: 519422543}
   - 54: {fileID: 519422542}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: PanelOpening
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3960,12 +4258,12 @@ MonoBehaviour:
   alwaysOnScreen: 0
   anchorOffset: 0
   renderQueue: 0
-  startingRenderQueue: 3009
+  startingRenderQueue: 3004
   mAlpha: 1
   mClipping: 0
   mClipRange: {x: 0, y: 0, z: 300, w: 200}
   mClipSoftness: {x: 4, y: 4}
-  mDepth: 12
+  mDepth: 13
   mSortingOrder: 0
   mClipOffset: {x: 0, y: 0}
 --- !u!1 &522309609
@@ -3979,7 +4277,7 @@ GameObject:
   - 114: {fileID: 522309611}
   - 114: {fileID: 522309613}
   - 114: {fileID: 522309612}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: notas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4138,7 +4436,7 @@ GameObject:
   - 114: {fileID: 533979373}
   - 114: {fileID: 533979372}
   - 114: {fileID: 533979371}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: StartScreen
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4244,12 +4542,12 @@ MonoBehaviour:
   mColor: {r: 1, g: 1, b: 1, a: 1}
   mPivot: 4
   mWidth: 2560
-  mHeight: 1440
+  mHeight: 1539
   mDepth: 0
   autoResizeBoxCollider: 0
   hideIfOffScreen: 0
-  keepAspectRatio: 1
-  aspectRatio: 1.77777779
+  keepAspectRatio: 0
+  aspectRatio: 1.66341782
   mType: 0
   mFillDirection: 4
   mFillAmount: 1
@@ -4331,7 +4629,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 584007480}
   - 114: {fileID: 584007481}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Quadro02
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4413,7 +4711,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 610641458}
   - 114: {fileID: 610641459}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: bruxa
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4493,7 +4791,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 631803491}
   - 114: {fileID: 631803492}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Quadro03
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4584,7 +4882,7 @@ GameObject:
   - 65: {fileID: 653457329}
   - 114: {fileID: 653457328}
   - 114: {fileID: 653457326}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: IconPage15
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4902,7 +5200,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 659612272}
   - 114: {fileID: 659612273}
-  m_Layer: 8
+  - 114: {fileID: 659612274}
+  m_Layer: 0
   m_Name: Quadro1-2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4973,6 +5272,97 @@ MonoBehaviour:
   mShader: {fileID: 4800000, guid: 4452ae9431d4963409d269d31d79c83d, type: 3}
   mBorder: {x: 0, y: 0, z: 0, w: 0}
   nextSprite: {fileID: 0}
+--- !u!114 &659612274
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 659612271}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05f1b1516c6174942a3dcd70a1d59428, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tweenDatas:
+  - _targetType: UI2DSprite, Assembly-CSharp
+    target: {fileID: 659612273}
+    targetRoot: {fileID: 659612271}
+    _targetPath: Quadro1-2.UI2DSprite
+    targetName: UI2DSprite
+    foldout: 1
+    isActive: 1
+    creationTime: 1
+    propDatas:
+    - _propType: UnityEngine.Color, UnityEngine
+      _pluginType: Holoville.HOTween.Plugins.Core.PlugColor, HOTween
+      _valueType: UnityEngine.Color, UnityEngine
+      propName: color
+      shortPropType: Color
+      isRelative: 0
+      isActive: 1
+      endValVector2: {x: 0, y: 0}
+      endValVector3: {x: 0, y: 0, z: 0}
+      endValVector4: {x: 0, y: 0, z: 0, w: 0}
+      endValFloat: 0
+      endValInt: 0
+      endValString: 
+      endValColor: {r: .529411793, g: .529411793, b: .529411793, a: 1}
+      endValRect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 0
+        height: 0
+    duration: 1
+    tweenFrom: 0
+    paused: 0
+    autoKill: 1
+    updateType: 0
+    delay: 6
+    id: 
+    loopType: 0
+    loops: 1
+    timeScale: 1
+    easeType: 5
+    animationCurve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - time: 1
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    onCompleteActionType: 0
+    onCompletePlayId: 
+    onCompleteTarget: {fileID: 0}
+    onCompleteMethodName: 
+    onCompleteParmType: 0
+    onCompleteParmColor: {r: 0, g: 0, b: 0, a: 1}
+    onCompleteParmNumber: 0
+    onCompleteParmObject: {fileID: 0}
+    onCompleteParmQuaternion: {x: 0, y: 0, z: 0, w: 0}
+    onCompleteParmRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    onCompleteParmString: 
+    onCompleteParmVector2: {x: 0, y: 0}
+    onCompleteParmVector3: {x: 0, y: 0, z: 0}
+    onCompleteParmVector4: {x: 0, y: 0, z: 0, w: 0}
+  globalDelay: 0
+  globalTimeScale: 1
+  sortMode: 0
+  creationTime: 1
+  destroyAfterSetup: 1
 --- !u!1 &714361120
 GameObject:
   m_ObjectHideFlags: 0
@@ -4982,7 +5372,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 714361121}
   - 114: {fileID: 714361122}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Q4_minotauro
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5062,7 +5452,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 768698442}
   - 114: {fileID: 768698443}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Q3_balao
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5144,7 +5534,7 @@ GameObject:
   - 114: {fileID: 790385827}
   - 114: {fileID: 790385825}
   - 54: {fileID: 790385826}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Scroll View
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5158,7 +5548,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 790385823}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -697, y: -646, z: 0}
+  m_LocalPosition: {x: -715, y: -675, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1069549813}
@@ -5240,12 +5630,12 @@ MonoBehaviour:
   alwaysOnScreen: 0
   anchorOffset: 0
   renderQueue: 0
-  startingRenderQueue: 3011
+  startingRenderQueue: 3006
   mAlpha: 1
   mClipping: 3
   mClipRange: {x: 650, y: -1, z: 1570, w: 134}
   mClipSoftness: {x: 10, y: 10}
-  mDepth: 13
+  mDepth: 14
   mSortingOrder: 0
   mClipOffset: {x: 61.3127441, y: 0}
 --- !u!1 &793531161
@@ -5259,7 +5649,7 @@ GameObject:
   - 114: {fileID: 793531165}
   - 114: {fileID: 793531164}
   - 114: {fileID: 793531163}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: LoaderBot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5395,7 +5785,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 835048131}
   - 114: {fileID: 835048132}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Q4_bruxa
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5477,7 +5867,7 @@ GameObject:
   - 114: {fileID: 839858791}
   - 114: {fileID: 839858792}
   - 54: {fileID: 839858793}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: PanelPages
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5532,12 +5922,12 @@ MonoBehaviour:
   alwaysOnScreen: 0
   anchorOffset: 0
   renderQueue: 0
-  startingRenderQueue: 3007
+  startingRenderQueue: 3004
   mAlpha: 1
   mClipping: 0
   mClipRange: {x: 0, y: 0, z: 300, w: 200}
   mClipSoftness: {x: 4, y: 4}
-  mDepth: 9
+  mDepth: 11
   mSortingOrder: 0
   mClipOffset: {x: 0, y: 0}
 --- !u!114 &839858792
@@ -5581,7 +5971,7 @@ GameObject:
   - 4: {fileID: 841749786}
   - 114: {fileID: 841749787}
   - 114: {fileID: 841749788}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: linhaMorcego
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5699,7 +6089,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 853913486}
   - 114: {fileID: 853913487}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Page13
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5781,7 +6171,7 @@ GameObject:
   - 114: {fileID: 881292092}
   - 114: {fileID: 881292091}
   - 54: {fileID: 881292090}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: ComicUI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5796,7 +6186,7 @@ Transform:
   m_GameObject: {fileID: 881292088}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: .00138888892, y: .00138888892, z: .00138888892}
+  m_LocalScale: {x: .00130208337, y: .00130208337, z: .00130208337}
   m_Children:
   - {fileID: 960180021}
   - {fileID: 368165437}
@@ -5878,8 +6268,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   scalingStyle: 0
   manualHeight: 1536
-  minimumHeight: 1440
-  maximumHeight: 1440
+  minimumHeight: 1536
+  maximumHeight: 1536
   adjustByDPI: 0
   shrinkPortraitUI: 0
 --- !u!1 &912703765
@@ -5892,7 +6282,7 @@ GameObject:
   - 4: {fileID: 912703766}
   - 114: {fileID: 912703767}
   - 54: {fileID: 912703768}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: PanelComic
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5906,7 +6296,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 912703765}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: -45, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1218484931}
@@ -5915,6 +6305,7 @@ Transform:
   - {fileID: 1301796461}
   - {fileID: 790385824}
   - {fileID: 1245068088}
+  - {fileID: 431562628}
   m_Father: {fileID: 881292089}
   m_RootOrder: 5
 --- !u!114 &912703767
@@ -5952,7 +6343,7 @@ MonoBehaviour:
   alwaysOnScreen: 0
   anchorOffset: 0
   renderQueue: 0
-  startingRenderQueue: 3007
+  startingRenderQueue: 3001
   mAlpha: 1
   mClipping: 0
   mClipRange: {x: 0, y: 0, z: 300, w: 200}
@@ -5984,6 +6375,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 949259706}
   - 108: {fileID: 949259705}
+  - 114: {fileID: 949259707}
   m_Layer: 0
   m_Name: Directional light
   m_TagString: Untagged
@@ -6001,7 +6393,7 @@ Light:
   serializedVersion: 3
   m_Type: 1
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: .720000029
+  m_Intensity: .699999988
   m_Range: 10
   m_SpotAngle: 30
   m_CookieSize: 10
@@ -6033,11 +6425,102 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 949259704}
   m_LocalRotation: {x: .408217937, y: -.234569728, z: .109381661, w: .875426114}
-  m_LocalPosition: {x: -.00846937951, y: -.182899982, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -6.50448322, y: -140.467194, z: 0}
+  m_LocalScale: {x: 768.000061, y: 768, z: 767.999939}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_Father: {fileID: 2114536182}
+  m_RootOrder: 2
+--- !u!114 &949259707
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 949259704}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05f1b1516c6174942a3dcd70a1d59428, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tweenDatas:
+  - _targetType: UnityEngine.Light, UnityEngine
+    target: {fileID: 949259705}
+    targetRoot: {fileID: 949259704}
+    _targetPath: Directional light.light
+    targetName: light
+    foldout: 1
+    isActive: 1
+    creationTime: 2
+    propDatas:
+    - _propType: System.Single, mscorlib
+      _pluginType: Holoville.HOTween.Plugins.Core.PlugFloat, HOTween
+      _valueType: System.Single, mscorlib
+      propName: intensity
+      shortPropType: Single
+      isRelative: 0
+      isActive: 1
+      endValVector2: {x: 0, y: 0}
+      endValVector3: {x: 0, y: 0, z: 0}
+      endValVector4: {x: 0, y: 0, z: 0, w: 0}
+      endValFloat: 1.22000003
+      endValInt: 0
+      endValString: 
+      endValColor: {r: 1, g: 1, b: 1, a: 1}
+      endValRect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 0
+        height: 0
+    duration: .0799999982
+    tweenFrom: 0
+    paused: 0
+    autoKill: 1
+    updateType: 0
+    delay: 2
+    id: P1Q1
+    loopType: 1
+    loops: 6
+    timeScale: 1
+    easeType: 5
+    animationCurve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - time: 1
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    onCompleteActionType: 4
+    onCompletePlayId: 
+    onCompleteTarget: {fileID: 1595920406}
+    onCompleteMethodName: Play
+    onCompleteParmType: 0
+    onCompleteParmColor: {r: 0, g: 0, b: 0, a: 1}
+    onCompleteParmNumber: 0
+    onCompleteParmObject: {fileID: 0}
+    onCompleteParmQuaternion: {x: 0, y: 0, z: 0, w: 0}
+    onCompleteParmRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    onCompleteParmString: 
+    onCompleteParmVector2: {x: 0, y: 0}
+    onCompleteParmVector3: {x: 0, y: 0, z: 0}
+    onCompleteParmVector4: {x: 0, y: 0, z: 0, w: 0}
+  globalDelay: 0
+  globalTimeScale: 1
+  sortMode: 0
+  creationTime: 2
+  destroyAfterSetup: 0
 --- !u!1 &960180020
 GameObject:
   m_ObjectHideFlags: 0
@@ -6047,7 +6530,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 960180021}
   - 114: {fileID: 960180022}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6127,7 +6610,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 972703882}
   - 114: {fileID: 972703883}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Quadro01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6213,7 +6696,7 @@ GameObject:
   - 54: {fileID: 1035017886}
   - 95: {fileID: 1035017887}
   - 114: {fileID: 1035017888}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Page4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6348,7 +6831,7 @@ GameObject:
   - 65: {fileID: 1043613181}
   - 114: {fileID: 1043613180}
   - 114: {fileID: 1043613178}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: IconPage03
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6674,7 +7157,7 @@ GameObject:
   - 65: {fileID: 1051211205}
   - 114: {fileID: 1051211204}
   - 114: {fileID: 1051211202}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: IconPage11
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6992,7 +7475,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1055707646}
   - 114: {fileID: 1055707647}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Q2_estilingue
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7072,7 +7555,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1066395057}
   - 114: {fileID: 1066395058}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Q1_balao2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7154,7 +7637,7 @@ GameObject:
   - 114: {fileID: 1069549815}
   - 114: {fileID: 1069549814}
   - 114: {fileID: 1069549816}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: ScrollGrid
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7257,7 +7740,7 @@ GameObject:
   - 65: {fileID: 1082383716}
   - 114: {fileID: 1082383715}
   - 114: {fileID: 1082383713}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: IconPage09
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7575,7 +8058,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1135189969}
   - 114: {fileID: 1135189970}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Q3_amebas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7655,7 +8138,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1165918924}
   - 114: {fileID: 1165918925}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Page8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7735,7 +8218,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 1216107515}
   - 114: {fileID: 1216107517}
-  m_Layer: 8
+  - 114: {fileID: 1216107516}
+  m_Layer: 0
   m_Name: Vela2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7749,11 +8233,176 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1216107514}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 718, y: -227, z: 0}
+  m_LocalPosition: {x: 723, y: -262, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 2114536182}
-  m_RootOrder: 7
+  m_Father: {fileID: 501588171}
+  m_RootOrder: 6
+--- !u!114 &1216107516
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1216107514}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05f1b1516c6174942a3dcd70a1d59428, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tweenDatas:
+  - _targetType: UI2DSprite, Assembly-CSharp
+    target: {fileID: 1216107517}
+    targetRoot: {fileID: 1216107514}
+    _targetPath: Vela2.UI2DSprite
+    targetName: UI2DSprite
+    foldout: 1
+    isActive: 1
+    creationTime: 1
+    propDatas:
+    - _propType: System.Single, mscorlib
+      _pluginType: Holoville.HOTween.Plugins.Core.PlugFloat, HOTween
+      _valueType: System.Single, mscorlib
+      propName: alpha
+      shortPropType: Single
+      isRelative: 0
+      isActive: 1
+      endValVector2: {x: 0, y: 0}
+      endValVector3: {x: 0, y: 0, z: 0}
+      endValVector4: {x: 0, y: 0, z: 0, w: 0}
+      endValFloat: 0
+      endValInt: 0
+      endValString: 
+      endValColor: {r: 1, g: 1, b: 1, a: 1}
+      endValRect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 0
+        height: 0
+    duration: 1
+    tweenFrom: 1
+    paused: 0
+    autoKill: 1
+    updateType: 0
+    delay: 8
+    id: 
+    loopType: 0
+    loops: 1
+    timeScale: 1
+    easeType: 5
+    animationCurve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - time: 1
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    onCompleteActionType: 2
+    onCompletePlayId: vela
+    onCompleteTarget: {fileID: 0}
+    onCompleteMethodName: 
+    onCompleteParmType: 0
+    onCompleteParmColor: {r: 0, g: 0, b: 0, a: 1}
+    onCompleteParmNumber: 0
+    onCompleteParmObject: {fileID: 0}
+    onCompleteParmQuaternion: {x: 0, y: 0, z: 0, w: 0}
+    onCompleteParmRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    onCompleteParmString: 
+    onCompleteParmVector2: {x: 0, y: 0}
+    onCompleteParmVector3: {x: 0, y: 0, z: 0}
+    onCompleteParmVector4: {x: 0, y: 0, z: 0, w: 0}
+  - _targetType: UI2DSprite, Assembly-CSharp
+    target: {fileID: 1216107517}
+    targetRoot: {fileID: 1216107514}
+    _targetPath: Vela2.UI2DSprite
+    targetName: UI2DSprite
+    foldout: 1
+    isActive: 1
+    creationTime: 2
+    propDatas:
+    - _propType: System.Single, mscorlib
+      _pluginType: Holoville.HOTween.Plugins.Core.PlugFloat, HOTween
+      _valueType: System.Single, mscorlib
+      propName: alpha
+      shortPropType: Single
+      isRelative: 0
+      isActive: 1
+      endValVector2: {x: 0, y: 0}
+      endValVector3: {x: 0, y: 0, z: 0}
+      endValVector4: {x: 0, y: 0, z: 0, w: 0}
+      endValFloat: .800000012
+      endValInt: 0
+      endValString: 
+      endValColor: {r: 1, g: 1, b: 1, a: 1}
+      endValRect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 0
+        height: 0
+    duration: 1
+    tweenFrom: 0
+    paused: 1
+    autoKill: 1
+    updateType: 0
+    delay: 0
+    id: vela
+    loopType: 1
+    loops: 20
+    timeScale: 1
+    easeType: 5
+    animationCurve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - time: 1
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    onCompleteActionType: 0
+    onCompletePlayId: 
+    onCompleteTarget: {fileID: 0}
+    onCompleteMethodName: 
+    onCompleteParmType: 0
+    onCompleteParmColor: {r: 0, g: 0, b: 0, a: 1}
+    onCompleteParmNumber: 0
+    onCompleteParmObject: {fileID: 0}
+    onCompleteParmQuaternion: {x: 0, y: 0, z: 0, w: 0}
+    onCompleteParmRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    onCompleteParmString: 
+    onCompleteParmVector2: {x: 0, y: 0}
+    onCompleteParmVector3: {x: 0, y: 0, z: 0}
+    onCompleteParmVector4: {x: 0, y: 0, z: 0, w: 0}
+  globalDelay: 0
+  globalTimeScale: 1
+  sortMode: 0
+  creationTime: 2
+  destroyAfterSetup: 0
 --- !u!114 &1216107517
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7815,7 +8464,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1218484931}
   - 114: {fileID: 1218484932}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: MainFrame
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7829,7 +8478,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1218484930}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -623, z: 0}
+  m_LocalPosition: {x: -18, y: -652, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 912703766}
@@ -7866,7 +8515,7 @@ MonoBehaviour:
   mPivot: 4
   mWidth: 1794
   mHeight: 190
-  mDepth: 0
+  mDepth: -2
   autoResizeBoxCollider: 0
   hideIfOffScreen: 0
   keepAspectRatio: 1
@@ -7898,7 +8547,7 @@ GameObject:
   - 65: {fileID: 1219250389}
   - 114: {fileID: 1219250388}
   - 114: {fileID: 1219250390}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Q3_frank_estilingue
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8045,7 +8694,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 1234395459}
   - 114: {fileID: 1234395461}
-  m_Layer: 8
+  - 114: {fileID: 1234395460}
+  m_Layer: 0
   m_Name: Vela1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8059,11 +8709,176 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1234395458}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 855, y: 436, z: 0}
+  m_LocalPosition: {x: 855, y: 405.000031, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 2114536182}
-  m_RootOrder: 6
+  m_Father: {fileID: 85145678}
+  m_RootOrder: 3
+--- !u!114 &1234395460
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1234395458}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05f1b1516c6174942a3dcd70a1d59428, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tweenDatas:
+  - _targetType: UI2DSprite, Assembly-CSharp
+    target: {fileID: 1234395461}
+    targetRoot: {fileID: 1234395458}
+    _targetPath: Vela1.UI2DSprite
+    targetName: UI2DSprite
+    foldout: 1
+    isActive: 1
+    creationTime: 1
+    propDatas:
+    - _propType: System.Single, mscorlib
+      _pluginType: Holoville.HOTween.Plugins.Core.PlugFloat, HOTween
+      _valueType: System.Single, mscorlib
+      propName: alpha
+      shortPropType: Single
+      isRelative: 0
+      isActive: 1
+      endValVector2: {x: 0, y: 0}
+      endValVector3: {x: 0, y: 0, z: 0}
+      endValVector4: {x: 0, y: 0, z: 0, w: 0}
+      endValFloat: .800000012
+      endValInt: 0
+      endValString: 
+      endValColor: {r: 1, g: 1, b: 1, a: 1}
+      endValRect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 0
+        height: 0
+    duration: .400000006
+    tweenFrom: 1
+    paused: 0
+    autoKill: 1
+    updateType: 0
+    delay: 0
+    id: P1Q1
+    loopType: 1
+    loops: 14
+    timeScale: 1
+    easeType: 0
+    animationCurve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - time: 1
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    onCompleteActionType: 0
+    onCompletePlayId: 
+    onCompleteTarget: {fileID: 0}
+    onCompleteMethodName: 
+    onCompleteParmType: 0
+    onCompleteParmColor: {r: 0, g: 0, b: 0, a: 1}
+    onCompleteParmNumber: 0
+    onCompleteParmObject: {fileID: 0}
+    onCompleteParmQuaternion: {x: 0, y: 0, z: 0, w: 0}
+    onCompleteParmRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    onCompleteParmString: 
+    onCompleteParmVector2: {x: 0, y: 0}
+    onCompleteParmVector3: {x: 0, y: 0, z: 0}
+    onCompleteParmVector4: {x: 0, y: 0, z: 0, w: 0}
+  - _targetType: UI2DSprite, Assembly-CSharp
+    target: {fileID: 1234395461}
+    targetRoot: {fileID: 1234395458}
+    _targetPath: Vela1.UI2DSprite
+    targetName: UI2DSprite
+    foldout: 1
+    isActive: 1
+    creationTime: 2
+    propDatas:
+    - _propType: System.Single, mscorlib
+      _pluginType: Holoville.HOTween.Plugins.Core.PlugFloat, HOTween
+      _valueType: System.Single, mscorlib
+      propName: alpha
+      shortPropType: Single
+      isRelative: 0
+      isActive: 1
+      endValVector2: {x: 0, y: 0}
+      endValVector3: {x: 0, y: 0, z: 0}
+      endValVector4: {x: 0, y: 0, z: 0, w: 0}
+      endValFloat: 0
+      endValInt: 0
+      endValString: 
+      endValColor: {r: 1, g: 1, b: 1, a: 1}
+      endValRect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 0
+        height: 0
+    duration: 1
+    tweenFrom: 0
+    paused: 0
+    autoKill: 1
+    updateType: 0
+    delay: 6
+    id: 
+    loopType: 0
+    loops: 1
+    timeScale: 1
+    easeType: 5
+    animationCurve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - time: 1
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    onCompleteActionType: 0
+    onCompletePlayId: 
+    onCompleteTarget: {fileID: 0}
+    onCompleteMethodName: 
+    onCompleteParmType: 0
+    onCompleteParmColor: {r: 0, g: 0, b: 0, a: 1}
+    onCompleteParmNumber: 0
+    onCompleteParmObject: {fileID: 0}
+    onCompleteParmQuaternion: {x: 0, y: 0, z: 0, w: 0}
+    onCompleteParmRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    onCompleteParmString: 
+    onCompleteParmVector2: {x: 0, y: 0}
+    onCompleteParmVector3: {x: 0, y: 0, z: 0}
+    onCompleteParmVector4: {x: 0, y: 0, z: 0, w: 0}
+  globalDelay: 0
+  globalTimeScale: 1
+  sortMode: 0
+  creationTime: 2
+  destroyAfterSetup: 0
 --- !u!114 &1234395461
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8127,7 +8942,7 @@ GameObject:
   - 114: {fileID: 1245068089}
   - 114: {fileID: 1245068091}
   - 54: {fileID: 1245068090}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Scroll Bar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8141,7 +8956,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1245068087}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -360, y: -552.285461, z: 0}
+  m_LocalPosition: {x: -378, y: -581, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1766721157}
@@ -8240,7 +9055,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1266274511}
   - 114: {fileID: 1266274512}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Page9
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8322,7 +9137,7 @@ GameObject:
   - 114: {fileID: 1301796462}
   - 114: {fileID: 1301796463}
   - 65: {fileID: 1301796464}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: PageLeftButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8430,7 +9245,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1304667666}
   - 114: {fileID: 1304667667}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Page2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8512,7 +9327,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1314899218}
   - 114: {fileID: 1314899219}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Q1_balao
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8600,7 +9415,7 @@ GameObject:
   - 65: {fileID: 1335403009}
   - 114: {fileID: 1335403008}
   - 114: {fileID: 1335403006}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: IconPage05
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8919,7 +9734,7 @@ GameObject:
   - 4: {fileID: 1345904064}
   - 114: {fileID: 1345904066}
   - 114: {fileID: 1345904065}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: balao
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9037,7 +9852,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1358929186}
   - 114: {fileID: 1358929187}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Q3_drac
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9117,7 +9932,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1370460654}
   - 114: {fileID: 1370460655}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: fundo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9197,7 +10012,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 1390764655}
   - 114: {fileID: 1390764656}
-  m_Layer: 8
+  - 114: {fileID: 1390764657}
+  m_Layer: 0
   m_Name: Morcego
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9211,10 +10027,10 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1390764654}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -194, y: -174, z: 0}
+  m_LocalPosition: {x: -194.000015, y: -174, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 2114536182}
+  m_Father: {fileID: 501588171}
   m_RootOrder: 4
 --- !u!114 &1390764656
 MonoBehaviour:
@@ -9268,6 +10084,191 @@ MonoBehaviour:
   mShader: {fileID: 4800000, guid: 4452ae9431d4963409d269d31d79c83d, type: 3}
   mBorder: {x: 0, y: 0, z: 0, w: 0}
   nextSprite: {fileID: 0}
+--- !u!114 &1390764657
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1390764654}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05f1b1516c6174942a3dcd70a1d59428, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tweenDatas:
+  - _targetType: UnityEngine.Transform, UnityEngine
+    target: {fileID: 1390764655}
+    targetRoot: {fileID: 1390764654}
+    _targetPath: Morcego.transform
+    targetName: transform
+    foldout: 1
+    isActive: 1
+    creationTime: 2
+    propDatas:
+    - _propType: UnityEngine.Vector3, UnityEngine
+      _pluginType: Holoville.HOTween.Plugins.Core.PlugVector3, HOTween
+      _valueType: UnityEngine.Vector3, UnityEngine
+      propName: localPosition
+      shortPropType: Vector3
+      isRelative: 0
+      isActive: 1
+      endValVector2: {x: 0, y: 0}
+      endValVector3: {x: 352, y: -196, z: 0}
+      endValVector4: {x: 0, y: 0, z: 0, w: 0}
+      endValFloat: 0
+      endValInt: 0
+      endValString: 
+      endValColor: {r: 1, g: 1, b: 1, a: 1}
+      endValRect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 0
+        height: 0
+    - _propType: UnityEngine.Vector3, UnityEngine
+      _pluginType: Holoville.HOTween.Plugins.Core.PlugVector3, HOTween
+      _valueType: UnityEngine.Vector3, UnityEngine
+      propName: localScale
+      shortPropType: Vector3
+      isRelative: 0
+      isActive: 1
+      endValVector2: {x: 0, y: 0}
+      endValVector3: {x: .449999988, y: .449999988, z: .449999988}
+      endValVector4: {x: 0, y: 0, z: 0, w: 0}
+      endValFloat: 0
+      endValInt: 0
+      endValString: 
+      endValColor: {r: 1, g: 1, b: 1, a: 1}
+      endValRect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 0
+        height: 0
+    duration: 1
+    tweenFrom: 1
+    paused: 0
+    autoKill: 1
+    updateType: 0
+    delay: 9
+    id: P1Q2
+    loopType: 0
+    loops: 1
+    timeScale: 1
+    easeType: 5
+    animationCurve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - time: 1
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    onCompleteActionType: 0
+    onCompletePlayId: 
+    onCompleteTarget: {fileID: 0}
+    onCompleteMethodName: 
+    onCompleteParmType: 0
+    onCompleteParmColor: {r: 0, g: 0, b: 0, a: 1}
+    onCompleteParmNumber: 0
+    onCompleteParmObject: {fileID: 0}
+    onCompleteParmQuaternion: {x: 0, y: 0, z: 0, w: 0}
+    onCompleteParmRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    onCompleteParmString: 
+    onCompleteParmVector2: {x: 0, y: 0}
+    onCompleteParmVector3: {x: 0, y: 0, z: 0}
+    onCompleteParmVector4: {x: 0, y: 0, z: 0, w: 0}
+  - _targetType: UI2DSprite, Assembly-CSharp
+    target: {fileID: 1390764656}
+    targetRoot: {fileID: 1390764654}
+    _targetPath: Morcego.UI2DSprite
+    targetName: UI2DSprite
+    foldout: 1
+    isActive: 1
+    creationTime: 3
+    propDatas:
+    - _propType: System.Single, mscorlib
+      _pluginType: Holoville.HOTween.Plugins.Core.PlugFloat, HOTween
+      _valueType: System.Single, mscorlib
+      propName: alpha
+      shortPropType: Single
+      isRelative: 0
+      isActive: 1
+      endValVector2: {x: 0, y: 0}
+      endValVector3: {x: 0, y: 0, z: 0}
+      endValVector4: {x: 0, y: 0, z: 0, w: 0}
+      endValFloat: 0
+      endValInt: 0
+      endValString: 
+      endValColor: {r: 1, g: 1, b: 1, a: 1}
+      endValRect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 0
+        height: 0
+    duration: .200000003
+    tweenFrom: 1
+    paused: 0
+    autoKill: 1
+    updateType: 0
+    delay: 9
+    id: P1Q2
+    loopType: 0
+    loops: 1
+    timeScale: 1
+    easeType: 5
+    animationCurve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - time: 1
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    onCompleteActionType: 0
+    onCompletePlayId: 
+    onCompleteTarget: {fileID: 0}
+    onCompleteMethodName: 
+    onCompleteParmType: 0
+    onCompleteParmColor: {r: 0, g: 0, b: 0, a: 1}
+    onCompleteParmNumber: 0
+    onCompleteParmObject: {fileID: 0}
+    onCompleteParmQuaternion: {x: 0, y: 0, z: 0, w: 0}
+    onCompleteParmRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    onCompleteParmString: 
+    onCompleteParmVector2: {x: 0, y: 0}
+    onCompleteParmVector3: {x: 0, y: 0, z: 0}
+    onCompleteParmVector4: {x: 0, y: 0, z: 0, w: 0}
+  globalDelay: 0
+  globalTimeScale: 1
+  sortMode: 0
+  creationTime: 3
+  destroyAfterSetup: 0
 --- !u!1 &1437595835
 GameObject:
   m_ObjectHideFlags: 0
@@ -9284,7 +10285,7 @@ GameObject:
   - 65: {fileID: 1437595840}
   - 114: {fileID: 1437595839}
   - 114: {fileID: 1437595837}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: IconPage01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9564,7 +10565,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1439814620}
   - 114: {fileID: 1439814621}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Page19
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9644,7 +10645,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 1444786458}
   - 114: {fileID: 1444786459}
-  m_Layer: 8
+  - 114: {fileID: 1444786460}
+  m_Layer: 0
   m_Name: Puf
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9661,7 +10663,7 @@ Transform:
   m_LocalPosition: {x: 557, y: -145, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 2114536182}
+  m_Father: {fileID: 501588171}
   m_RootOrder: 5
 --- !u!114 &1444786459
 MonoBehaviour:
@@ -9715,6 +10717,171 @@ MonoBehaviour:
   mShader: {fileID: 4800000, guid: 4452ae9431d4963409d269d31d79c83d, type: 3}
   mBorder: {x: 0, y: 0, z: 0, w: 0}
   nextSprite: {fileID: 0}
+--- !u!114 &1444786460
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1444786457}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05f1b1516c6174942a3dcd70a1d59428, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tweenDatas:
+  - _targetType: UI2DSprite, Assembly-CSharp
+    target: {fileID: 1444786459}
+    targetRoot: {fileID: 1444786457}
+    _targetPath: Puf.UI2DSprite
+    targetName: UI2DSprite
+    foldout: 1
+    isActive: 1
+    creationTime: 1
+    propDatas:
+    - _propType: System.Single, mscorlib
+      _pluginType: Holoville.HOTween.Plugins.Core.PlugFloat, HOTween
+      _valueType: System.Single, mscorlib
+      propName: alpha
+      shortPropType: Single
+      isRelative: 0
+      isActive: 1
+      endValVector2: {x: 0, y: 0}
+      endValVector3: {x: 0, y: 0, z: 0}
+      endValVector4: {x: 0, y: 0, z: 0, w: 0}
+      endValFloat: 0
+      endValInt: 0
+      endValString: 
+      endValColor: {r: 1, g: 1, b: 1, a: 1}
+      endValRect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 0
+        height: 0
+    duration: 1
+    tweenFrom: 1
+    paused: 0
+    autoKill: 1
+    updateType: 0
+    delay: 8.5
+    id: P1Q2
+    loopType: 1
+    loops: 1
+    timeScale: 1
+    easeType: 5
+    animationCurve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - time: 1
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    onCompleteActionType: 0
+    onCompletePlayId: 
+    onCompleteTarget: {fileID: 0}
+    onCompleteMethodName: 
+    onCompleteParmType: 0
+    onCompleteParmColor: {r: 0, g: 0, b: 0, a: 1}
+    onCompleteParmNumber: 0
+    onCompleteParmObject: {fileID: 0}
+    onCompleteParmQuaternion: {x: 0, y: 0, z: 0, w: 0}
+    onCompleteParmRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    onCompleteParmString: 
+    onCompleteParmVector2: {x: 0, y: 0}
+    onCompleteParmVector3: {x: 0, y: 0, z: 0}
+    onCompleteParmVector4: {x: 0, y: 0, z: 0, w: 0}
+  - _targetType: UnityEngine.Transform, UnityEngine
+    target: {fileID: 1444786458}
+    targetRoot: {fileID: 1444786457}
+    _targetPath: Puf.transform
+    targetName: transform
+    foldout: 1
+    isActive: 1
+    creationTime: 2
+    propDatas:
+    - _propType: UnityEngine.Vector3, UnityEngine
+      _pluginType: Holoville.HOTween.Plugins.Core.PlugVector3, HOTween
+      _valueType: UnityEngine.Vector3, UnityEngine
+      propName: localScale
+      shortPropType: Vector3
+      isRelative: 0
+      isActive: 1
+      endValVector2: {x: 0, y: 0}
+      endValVector3: {x: 0, y: 0, z: 0}
+      endValVector4: {x: 0, y: 0, z: 0, w: 0}
+      endValFloat: 0
+      endValInt: 0
+      endValString: 
+      endValColor: {r: 1, g: 1, b: 1, a: 1}
+      endValRect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 0
+        height: 0
+    duration: 1
+    tweenFrom: 1
+    paused: 0
+    autoKill: 1
+    updateType: 0
+    delay: 8.5
+    id: P1Q2
+    loopType: 0
+    loops: 1
+    timeScale: 1
+    easeType: 5
+    animationCurve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - time: 1
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    onCompleteActionType: 4
+    onCompletePlayId: 
+    onCompleteTarget: {fileID: 8404431}
+    onCompleteMethodName: Play
+    onCompleteParmType: 0
+    onCompleteParmColor: {r: 0, g: 0, b: 0, a: 1}
+    onCompleteParmNumber: 0
+    onCompleteParmObject: {fileID: 0}
+    onCompleteParmQuaternion: {x: 0, y: 0, z: 0, w: 0}
+    onCompleteParmRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    onCompleteParmString: 
+    onCompleteParmVector2: {x: 0, y: 0}
+    onCompleteParmVector3: {x: 0, y: 0, z: 0}
+    onCompleteParmVector4: {x: 0, y: 0, z: 0, w: 0}
+  globalDelay: 0
+  globalTimeScale: 1
+  sortMode: 0
+  creationTime: 2
+  destroyAfterSetup: 0
 --- !u!1 &1451816484
 GameObject:
   m_ObjectHideFlags: 0
@@ -9726,7 +10893,7 @@ GameObject:
   - 114: {fileID: 1451816488}
   - 114: {fileID: 1451816487}
   - 114: {fileID: 1451816486}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: LoaderTop
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9862,7 +11029,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1475216593}
   - 114: {fileID: 1475216594}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Quadro02
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9942,7 +11109,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 1477001459}
   - 114: {fileID: 1477001460}
-  m_Layer: 8
+  - 114: {fileID: 1477001461}
+  m_Layer: 0
   m_Name: Quadro1-1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10013,6 +11181,97 @@ MonoBehaviour:
   mShader: {fileID: 4800000, guid: 4452ae9431d4963409d269d31d79c83d, type: 3}
   mBorder: {x: 0, y: 0, z: 0, w: 0}
   nextSprite: {fileID: 0}
+--- !u!114 &1477001461
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1477001458}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05f1b1516c6174942a3dcd70a1d59428, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tweenDatas:
+  - _targetType: UI2DSprite, Assembly-CSharp
+    target: {fileID: 1477001460}
+    targetRoot: {fileID: 1477001458}
+    _targetPath: Quadro1-1.UI2DSprite
+    targetName: UI2DSprite
+    foldout: 1
+    isActive: 1
+    creationTime: 2
+    propDatas:
+    - _propType: UnityEngine.Color, UnityEngine
+      _pluginType: Holoville.HOTween.Plugins.Core.PlugColor, HOTween
+      _valueType: UnityEngine.Color, UnityEngine
+      propName: color
+      shortPropType: Color
+      isRelative: 0
+      isActive: 1
+      endValVector2: {x: 0, y: 0}
+      endValVector3: {x: 0, y: 0, z: 0}
+      endValVector4: {x: 0, y: 0, z: 0, w: 0}
+      endValFloat: 0
+      endValInt: 0
+      endValString: 
+      endValColor: {r: .529411793, g: .529411793, b: .529411793, a: 1}
+      endValRect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 0
+        height: 0
+    duration: 1
+    tweenFrom: 0
+    paused: 0
+    autoKill: 1
+    updateType: 0
+    delay: 6
+    id: 
+    loopType: 0
+    loops: 1
+    timeScale: 1
+    easeType: 5
+    animationCurve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - time: 1
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    onCompleteActionType: 0
+    onCompletePlayId: 
+    onCompleteTarget: {fileID: 0}
+    onCompleteMethodName: 
+    onCompleteParmType: 0
+    onCompleteParmColor: {r: 0, g: 0, b: 0, a: 1}
+    onCompleteParmNumber: 0
+    onCompleteParmObject: {fileID: 0}
+    onCompleteParmQuaternion: {x: 0, y: 0, z: 0, w: 0}
+    onCompleteParmRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    onCompleteParmString: 
+    onCompleteParmVector2: {x: 0, y: 0}
+    onCompleteParmVector3: {x: 0, y: 0, z: 0}
+    onCompleteParmVector4: {x: 0, y: 0, z: 0, w: 0}
+  globalDelay: 0
+  globalTimeScale: 1
+  sortMode: 0
+  creationTime: 2
+  destroyAfterSetup: 1
 --- !u!1 &1482216696
 GameObject:
   m_ObjectHideFlags: 0
@@ -10022,7 +11281,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 1482216697}
   - 114: {fileID: 1482216698}
-  m_Layer: 8
+  - 114: {fileID: 1482216699}
+  m_Layer: 0
   m_Name: Fumaca
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10036,10 +11296,10 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1482216696}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 206, y: -204, z: 0}
+  m_LocalPosition: {x: 206.000015, y: -204, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 2114536182}
+  m_Father: {fileID: 501588171}
   m_RootOrder: 3
 --- !u!114 &1482216698
 MonoBehaviour:
@@ -10078,10 +11338,10 @@ MonoBehaviour:
   hideIfOffScreen: 0
   keepAspectRatio: 0
   aspectRatio: 2.56481481
-  mType: 0
-  mFillDirection: 4
+  mType: 3
+  mFillDirection: 0
   mFillAmount: 1
-  mInvert: 0
+  mInvert: 1
   mFlip: 0
   centerType: 1
   leftType: 1
@@ -10093,6 +11353,117 @@ MonoBehaviour:
   mShader: {fileID: 4800000, guid: 4452ae9431d4963409d269d31d79c83d, type: 3}
   mBorder: {x: 0, y: 0, z: 0, w: 0}
   nextSprite: {fileID: 0}
+--- !u!114 &1482216699
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1482216696}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05f1b1516c6174942a3dcd70a1d59428, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tweenDatas:
+  - _targetType: UI2DSprite, Assembly-CSharp
+    target: {fileID: 1482216698}
+    targetRoot: {fileID: 1482216696}
+    _targetPath: Fumaca.UI2DSprite
+    targetName: UI2DSprite
+    foldout: 1
+    isActive: 1
+    creationTime: 1
+    propDatas:
+    - _propType: System.Single, mscorlib
+      _pluginType: Holoville.HOTween.Plugins.Core.PlugFloat, HOTween
+      _valueType: System.Single, mscorlib
+      propName: alpha
+      shortPropType: Single
+      isRelative: 0
+      isActive: 1
+      endValVector2: {x: 0, y: 0}
+      endValVector3: {x: 0, y: 0, z: 0}
+      endValVector4: {x: 0, y: 0, z: 0, w: 0}
+      endValFloat: 0
+      endValInt: 0
+      endValString: 
+      endValColor: {r: 1, g: 1, b: 1, a: 1}
+      endValRect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 0
+        height: 0
+    - _propType: System.Single, mscorlib
+      _pluginType: Holoville.HOTween.Plugins.Core.PlugFloat, HOTween
+      _valueType: System.Single, mscorlib
+      propName: fillAmount
+      shortPropType: Single
+      isRelative: 0
+      isActive: 1
+      endValVector2: {x: 0, y: 0}
+      endValVector3: {x: 0, y: 0, z: 0}
+      endValVector4: {x: 0, y: 0, z: 0, w: 0}
+      endValFloat: 0
+      endValInt: 0
+      endValString: 
+      endValColor: {r: 1, g: 1, b: 1, a: 1}
+      endValRect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 0
+        height: 0
+    duration: 1
+    tweenFrom: 1
+    paused: 0
+    autoKill: 1
+    updateType: 0
+    delay: 9
+    id: P1Q2
+    loopType: 0
+    loops: 1
+    timeScale: 1
+    easeType: 5
+    animationCurve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - time: 1
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    onCompleteActionType: 0
+    onCompletePlayId: 
+    onCompleteTarget: {fileID: 8404431}
+    onCompleteMethodName: Play
+    onCompleteParmType: 0
+    onCompleteParmColor: {r: 0, g: 0, b: 0, a: 1}
+    onCompleteParmNumber: 0
+    onCompleteParmObject: {fileID: 0}
+    onCompleteParmQuaternion: {x: 0, y: 0, z: 0, w: 0}
+    onCompleteParmRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    onCompleteParmString: 
+    onCompleteParmVector2: {x: 0, y: 0}
+    onCompleteParmVector3: {x: 0, y: 0, z: 0}
+    onCompleteParmVector4: {x: 0, y: 0, z: 0, w: 0}
+  globalDelay: 0
+  globalTimeScale: 1
+  sortMode: 0
+  creationTime: 1
+  destroyAfterSetup: 0
 --- !u!1 &1496553491
 GameObject:
   m_ObjectHideFlags: 0
@@ -10110,7 +11481,7 @@ GameObject:
   - 65: {fileID: 1496553496}
   - 114: {fileID: 1496553495}
   - 114: {fileID: 1496553493}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: IconPage14
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10436,7 +11807,7 @@ GameObject:
   - 65: {fileID: 1504530065}
   - 114: {fileID: 1504530064}
   - 114: {fileID: 1504530062}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: IconPage04
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10754,7 +12125,10 @@ GameObject:
   m_Component:
   - 4: {fileID: 1595920407}
   - 114: {fileID: 1595920408}
-  m_Layer: 8
+  - 114: {fileID: 1595920409}
+  - 82: {fileID: 1595920410}
+  - 114: {fileID: 1595920411}
+  m_Layer: 0
   m_Name: Balao1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10768,11 +12142,11 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1595920406}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 103, y: 515, z: 0}
+  m_LocalPosition: {x: 103, y: 532, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 2114536182}
-  m_RootOrder: 1
+  m_Father: {fileID: 85145678}
+  m_RootOrder: 2
 --- !u!114 &1595920408
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10825,6 +12199,240 @@ MonoBehaviour:
   mShader: {fileID: 4800000, guid: 4452ae9431d4963409d269d31d79c83d, type: 3}
   mBorder: {x: 0, y: 0, z: 0, w: 0}
   nextSprite: {fileID: 0}
+--- !u!114 &1595920409
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1595920406}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05f1b1516c6174942a3dcd70a1d59428, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tweenDatas:
+  - _targetType: UI2DSprite, Assembly-CSharp
+    target: {fileID: 1595920408}
+    targetRoot: {fileID: 1595920406}
+    _targetPath: Balao1.UI2DSprite
+    targetName: UI2DSprite
+    foldout: 1
+    isActive: 1
+    creationTime: 2
+    propDatas:
+    - _propType: System.Single, mscorlib
+      _pluginType: Holoville.HOTween.Plugins.Core.PlugFloat, HOTween
+      _valueType: System.Single, mscorlib
+      propName: alpha
+      shortPropType: Single
+      isRelative: 0
+      isActive: 1
+      endValVector2: {x: 0, y: 0}
+      endValVector3: {x: 0, y: 0, z: 0}
+      endValVector4: {x: 0, y: 0, z: 0, w: 0}
+      endValFloat: 0
+      endValInt: 0
+      endValString: 
+      endValColor: {r: 1, g: 1, b: 1, a: 1}
+      endValRect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 0
+        height: 0
+    duration: 1
+    tweenFrom: 1
+    paused: 0
+    autoKill: 1
+    updateType: 0
+    delay: 3
+    id: P1Q1
+    loopType: 0
+    loops: 1
+    timeScale: 1
+    easeType: 5
+    animationCurve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - time: 1
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    onCompleteActionType: 0
+    onCompletePlayId: 
+    onCompleteTarget: {fileID: 1595920406}
+    onCompleteMethodName: 
+    onCompleteParmType: 0
+    onCompleteParmColor: {r: 0, g: 0, b: 0, a: 1}
+    onCompleteParmNumber: 0
+    onCompleteParmObject: {fileID: 0}
+    onCompleteParmQuaternion: {x: 0, y: 0, z: 0, w: 0}
+    onCompleteParmRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    onCompleteParmString: 
+    onCompleteParmVector2: {x: 0, y: 0}
+    onCompleteParmVector3: {x: 0, y: 0, z: 0}
+    onCompleteParmVector4: {x: 0, y: 0, z: 0, w: 0}
+  - _targetType: UI2DSprite, Assembly-CSharp
+    target: {fileID: 1595920408}
+    targetRoot: {fileID: 1595920406}
+    _targetPath: Balao1.UI2DSprite
+    targetName: UI2DSprite
+    foldout: 1
+    isActive: 1
+    creationTime: 10
+    propDatas:
+    - _propType: UnityEngine.Color, UnityEngine
+      _pluginType: Holoville.HOTween.Plugins.Core.PlugColor, HOTween
+      _valueType: UnityEngine.Color, UnityEngine
+      propName: color
+      shortPropType: Color
+      isRelative: 0
+      isActive: 1
+      endValVector2: {x: 0, y: 0}
+      endValVector3: {x: 0, y: 0, z: 0}
+      endValVector4: {x: 0, y: 0, z: 0, w: 0}
+      endValFloat: 0
+      endValInt: 0
+      endValString: 
+      endValColor: {r: .529411793, g: .529411793, b: .529411793, a: 1}
+      endValRect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 0
+        height: 0
+    duration: 1
+    tweenFrom: 0
+    paused: 0
+    autoKill: 1
+    updateType: 0
+    delay: 6
+    id: P1Q1
+    loopType: 0
+    loops: 1
+    timeScale: 1
+    easeType: 5
+    animationCurve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - time: 1
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    onCompleteActionType: 0
+    onCompletePlayId: 
+    onCompleteTarget: {fileID: 0}
+    onCompleteMethodName: 
+    onCompleteParmType: 0
+    onCompleteParmColor: {r: 0, g: 0, b: 0, a: 1}
+    onCompleteParmNumber: 0
+    onCompleteParmObject: {fileID: 0}
+    onCompleteParmQuaternion: {x: 0, y: 0, z: 0, w: 0}
+    onCompleteParmRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    onCompleteParmString: 
+    onCompleteParmVector2: {x: 0, y: 0}
+    onCompleteParmVector3: {x: 0, y: 0, z: 0}
+    onCompleteParmVector4: {x: 0, y: 0, z: 0, w: 0}
+  globalDelay: 0
+  globalTimeScale: 1
+  sortMode: 0
+  creationTime: 10
+  destroyAfterSetup: 0
+--- !u!82 &1595920410
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1595920406}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_audioClip: {fileID: 8300000, guid: cdea98f32bdc17348a6829981af82e80, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+--- !u!114 &1595920411
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1595920406}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b1d1781db90ea714fa71e17a56b2d4e6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1597741636
 GameObject:
   m_ObjectHideFlags: 0
@@ -10835,7 +12443,7 @@ GameObject:
   - 4: {fileID: 1597741637}
   - 114: {fileID: 1597741638}
   - 114: {fileID: 1597741639}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Q4_frank
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10953,7 +12561,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1601894893}
   - 114: {fileID: 1601894894}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Page7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11040,7 +12648,7 @@ GameObject:
   - 114: {fileID: 1604919876}
   - 114: {fileID: 1604919877}
   - 114: {fileID: 1604919878}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: IconPage00
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11320,7 +12928,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1608139824}
   - 114: {fileID: 1608139825}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Q3_trilhos
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11400,7 +13008,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1649041472}
   - 114: {fileID: 1649041471}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Page21
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11480,7 +13088,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 1664406193}
   - 114: {fileID: 1664406194}
-  m_Layer: 8
+  - 114: {fileID: 1664406195}
+  m_Layer: 0
   m_Name: Quadro2-1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11494,11 +13103,11 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1664406192}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -512, y: -300, z: 0}
+  m_LocalPosition: {x: -512, y: -317, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 85145678}
-  m_RootOrder: 2
+  m_Father: {fileID: 501588171}
+  m_RootOrder: 0
 --- !u!114 &1664406194
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11551,6 +13160,97 @@ MonoBehaviour:
   mShader: {fileID: 4800000, guid: 4452ae9431d4963409d269d31d79c83d, type: 3}
   mBorder: {x: 0, y: 0, z: 0, w: 0}
   nextSprite: {fileID: 0}
+--- !u!114 &1664406195
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1664406192}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05f1b1516c6174942a3dcd70a1d59428, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tweenDatas:
+  - _targetType: UI2DSprite, Assembly-CSharp
+    target: {fileID: 1664406194}
+    targetRoot: {fileID: 1664406192}
+    _targetPath: Quadro2-1.UI2DSprite
+    targetName: UI2DSprite
+    foldout: 1
+    isActive: 1
+    creationTime: 2
+    propDatas:
+    - _propType: UnityEngine.Color, UnityEngine
+      _pluginType: Holoville.HOTween.Plugins.Core.PlugColor, HOTween
+      _valueType: UnityEngine.Color, UnityEngine
+      propName: color
+      shortPropType: Color
+      isRelative: 0
+      isActive: 1
+      endValVector2: {x: 0, y: 0}
+      endValVector3: {x: 0, y: 0, z: 0}
+      endValVector4: {x: 0, y: 0, z: 0, w: 0}
+      endValFloat: 0
+      endValInt: 0
+      endValString: 
+      endValColor: {r: .147058845, g: .147058845, b: .147058845, a: 1}
+      endValRect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 0
+        height: 0
+    duration: 1
+    tweenFrom: 1
+    paused: 0
+    autoKill: 1
+    updateType: 0
+    delay: 7
+    id: P1Q1
+    loopType: 0
+    loops: 1
+    timeScale: 1
+    easeType: 5
+    animationCurve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - time: 1
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    onCompleteActionType: 0
+    onCompletePlayId: 
+    onCompleteTarget: {fileID: 0}
+    onCompleteMethodName: 
+    onCompleteParmType: 0
+    onCompleteParmColor: {r: 0, g: 0, b: 0, a: 1}
+    onCompleteParmNumber: 0
+    onCompleteParmObject: {fileID: 0}
+    onCompleteParmQuaternion: {x: 0, y: 0, z: 0, w: 0}
+    onCompleteParmRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    onCompleteParmString: 
+    onCompleteParmVector2: {x: 0, y: 0}
+    onCompleteParmVector3: {x: 0, y: 0, z: 0}
+    onCompleteParmVector4: {x: 0, y: 0, z: 0, w: 0}
+  globalDelay: 0
+  globalTimeScale: 1
+  sortMode: 0
+  creationTime: 2
+  destroyAfterSetup: 0
 --- !u!1 &1678273867
 GameObject:
   m_ObjectHideFlags: 0
@@ -11564,7 +13264,7 @@ GameObject:
   - 54: {fileID: 1678273871}
   - 95: {fileID: 1678273872}
   - 114: {fileID: 1678273873}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Page3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11701,7 +13401,7 @@ GameObject:
   - 65: {fileID: 1691896981}
   - 114: {fileID: 1691896980}
   - 114: {fileID: 1691896978}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: IconPage10
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12019,7 +13719,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1722109437}
   - 114: {fileID: 1722109438}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Page12
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12106,7 +13806,7 @@ GameObject:
   - 65: {fileID: 1731310035}
   - 114: {fileID: 1731310034}
   - 114: {fileID: 1731310032}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: IconPage02
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12388,7 +14088,7 @@ GameObject:
   - 114: {fileID: 1766721158}
   - 65: {fileID: 1766721160}
   - 114: {fileID: 1766721159}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Foreground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12497,7 +14197,7 @@ GameObject:
   - 65: {fileID: 1779642786}
   - 114: {fileID: 1779642785}
   - 114: {fileID: 1779642783}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: IconPage06
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12815,7 +14515,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1792192894}
   - 114: {fileID: 1792192895}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Page5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12896,7 +14596,7 @@ GameObject:
   - 4: {fileID: 1820751034}
   - 114: {fileID: 1820751036}
   - 114: {fileID: 1820751035}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: PageRoot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12993,7 +14693,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1849237460}
   - 114: {fileID: 1849237461}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Q1_balao
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13074,7 +14774,7 @@ GameObject:
   - 4: {fileID: 1915849475}
   - 114: {fileID: 1915849477}
   - 54: {fileID: 1915849476}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: _PanelLoad
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13145,7 +14845,7 @@ MonoBehaviour:
   alwaysOnScreen: 0
   anchorOffset: 0
   renderQueue: 0
-  startingRenderQueue: 3011
+  startingRenderQueue: 3006
   mAlpha: 1
   mClipping: 0
   mClipRange: {x: 0, y: 0, z: 300, w: 200}
@@ -13163,7 +14863,7 @@ GameObject:
   - 4: {fileID: 1919496919}
   - 114: {fileID: 1919496920}
   - 114: {fileID: 1919496921}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: mumia
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13282,7 +14982,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1935697299}
   - 114: {fileID: 1935697300}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Page22
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13362,7 +15062,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1946441702}
   - 114: {fileID: 1946441703}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Page6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13442,7 +15142,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1965810828}
   - 114: {fileID: 1965810829}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Q4_coracao
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13522,7 +15222,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1965831724}
   - 114: {fileID: 1965831725}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Q3_amebassemtrilho
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13605,7 +15305,7 @@ GameObject:
   - 114: {fileID: 1966767840}
   - 65: {fileID: 1966767842}
   - 114: {fileID: 1966767843}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: FrankDepoimento
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13735,7 +15435,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 2020246023}
   - 114: {fileID: 2020246024}
-  m_Layer: 8
+  - 114: {fileID: 2020246025}
+  m_Layer: 0
   m_Name: Quadro2-2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13749,11 +15450,11 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2020246022}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 512, y: -300, z: 0}
+  m_LocalPosition: {x: 512, y: -317, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 85145678}
-  m_RootOrder: 3
+  m_Father: {fileID: 501588171}
+  m_RootOrder: 1
 --- !u!114 &2020246024
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13806,6 +15507,97 @@ MonoBehaviour:
   mShader: {fileID: 4800000, guid: 4452ae9431d4963409d269d31d79c83d, type: 3}
   mBorder: {x: 0, y: 0, z: 0, w: 0}
   nextSprite: {fileID: 0}
+--- !u!114 &2020246025
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2020246022}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05f1b1516c6174942a3dcd70a1d59428, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tweenDatas:
+  - _targetType: UI2DSprite, Assembly-CSharp
+    target: {fileID: 2020246024}
+    targetRoot: {fileID: 2020246022}
+    _targetPath: Quadro2-2.UI2DSprite
+    targetName: UI2DSprite
+    foldout: 1
+    isActive: 1
+    creationTime: 4
+    propDatas:
+    - _propType: UnityEngine.Color, UnityEngine
+      _pluginType: Holoville.HOTween.Plugins.Core.PlugColor, HOTween
+      _valueType: UnityEngine.Color, UnityEngine
+      propName: color
+      shortPropType: Color
+      isRelative: 0
+      isActive: 1
+      endValVector2: {x: 0, y: 0}
+      endValVector3: {x: 0, y: 0, z: 0}
+      endValVector4: {x: 0, y: 0, z: 0, w: 0}
+      endValFloat: 0
+      endValInt: 0
+      endValString: 
+      endValColor: {r: .147058845, g: .147058845, b: .147058845, a: 1}
+      endValRect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 0
+        height: 0
+    duration: 1
+    tweenFrom: 1
+    paused: 0
+    autoKill: 1
+    updateType: 0
+    delay: 7
+    id: P1Q1
+    loopType: 0
+    loops: 1
+    timeScale: 1
+    easeType: 5
+    animationCurve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - time: 1
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    onCompleteActionType: 0
+    onCompletePlayId: 
+    onCompleteTarget: {fileID: 0}
+    onCompleteMethodName: 
+    onCompleteParmType: 0
+    onCompleteParmColor: {r: 0, g: 0, b: 0, a: 1}
+    onCompleteParmNumber: 0
+    onCompleteParmObject: {fileID: 0}
+    onCompleteParmQuaternion: {x: 0, y: 0, z: 0, w: 0}
+    onCompleteParmRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    onCompleteParmString: 
+    onCompleteParmVector2: {x: 0, y: 0}
+    onCompleteParmVector3: {x: 0, y: 0, z: 0}
+    onCompleteParmVector4: {x: 0, y: 0, z: 0, w: 0}
+  globalDelay: 0
+  globalTimeScale: 1
+  sortMode: 0
+  creationTime: 4
+  destroyAfterSetup: 0
 --- !u!1 &2027618205
 GameObject:
   m_ObjectHideFlags: 0
@@ -13815,7 +15607,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 2027618206}
   - 114: {fileID: 2027618207}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Quadro01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13895,7 +15687,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 2043274993}
   - 114: {fileID: 2043274994}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13976,7 +15768,7 @@ GameObject:
   - 4: {fileID: 2047655408}
   - 114: {fileID: 2047655409}
   - 114: {fileID: 2047655410}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: BgAlpha
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14094,7 +15886,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 2054451627}
   - 114: {fileID: 2054451628}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Q2_maofrank
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14174,7 +15966,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 2060513752}
   - 114: {fileID: 2060513751}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: MainBGFrame
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14213,7 +16005,7 @@ MonoBehaviour:
   mPivot: 4
   mWidth: 1794
   mHeight: 190
-  mDepth: -1
+  mDepth: -3
   autoResizeBoxCollider: 0
   hideIfOffScreen: 0
   keepAspectRatio: 1
@@ -14256,13 +16048,13 @@ GameObject:
   - 114: {fileID: 2114536183}
   - 54: {fileID: 2114536184}
   - 114: {fileID: 2114536185}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Page1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2114536182
 Transform:
   m_ObjectHideFlags: 0
@@ -14273,15 +16065,9 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 431562628}
-  - {fileID: 1595920407}
-  - {fileID: 8404432}
-  - {fileID: 1482216697}
-  - {fileID: 1390764655}
-  - {fileID: 1444786458}
-  - {fileID: 1234395459}
-  - {fileID: 1216107515}
   - {fileID: 85145678}
+  - {fileID: 501588171}
+  - {fileID: 949259706}
   m_Father: {fileID: 1820751034}
   m_RootOrder: 0
 --- !u!114 &2114536183
@@ -14319,12 +16105,12 @@ MonoBehaviour:
   alwaysOnScreen: 0
   anchorOffset: 0
   renderQueue: 0
-  startingRenderQueue: 3001
+  startingRenderQueue: 3004
   mAlpha: 1
   mClipping: 0
   mClipRange: {x: 0, y: 0, z: 300, w: 200}
   mClipSoftness: {x: 4, y: 4}
-  mDepth: 1
+  mDepth: 12
   mSortingOrder: 0
   mClipOffset: {x: 0, y: 0}
 --- !u!54 &2114536184
@@ -14350,33 +16136,86 @@ MonoBehaviour:
   m_GameObject: {fileID: 2114536181}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9e2747e3775af504da1a4d5a46c5a1ce, type: 3}
+  m_Script: {fileID: 11500000, guid: 05f1b1516c6174942a3dcd70a1d59428, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  method: 0
-  style: 0
-  animationCurve:
-    serializedVersion: 2
-    m_Curve:
-    - time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 1
-      tangentMode: 0
-    - time: 1
-      value: 1
-      inSlope: 1
-      outSlope: 0
-      tangentMode: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-  ignoreTimeScale: 1
-  delay: 0
-  duration: .5
-  steeperCurves: 0
-  tweenGroup: 0
-  onFinished: []
-  eventReceiver: {fileID: 0}
-  callWhenFinished: 
-  from: 0
-  to: 1
+  tweenDatas:
+  - _targetType: UIPanel, Assembly-CSharp
+    target: {fileID: 2114536183}
+    targetRoot: {fileID: 2114536181}
+    _targetPath: Page1.UIPanel
+    targetName: UIPanel
+    foldout: 1
+    isActive: 1
+    creationTime: 1
+    propDatas:
+    - _propType: System.Single, mscorlib
+      _pluginType: Holoville.HOTween.Plugins.Core.PlugFloat, HOTween
+      _valueType: System.Single, mscorlib
+      propName: alpha
+      shortPropType: Single
+      isRelative: 0
+      isActive: 1
+      endValVector2: {x: 0, y: 0}
+      endValVector3: {x: 0, y: 0, z: 0}
+      endValVector4: {x: 0, y: 0, z: 0, w: 0}
+      endValFloat: 0
+      endValInt: 0
+      endValString: 
+      endValColor: {r: 1, g: 1, b: 1, a: 1}
+      endValRect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 0
+        height: 0
+    duration: .5
+    tweenFrom: 1
+    paused: 0
+    autoKill: 1
+    updateType: 0
+    delay: 0
+    id: 
+    loopType: 0
+    loops: 1
+    timeScale: 1
+    easeType: 5
+    animationCurve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - time: 1
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    onCompleteActionType: 0
+    onCompletePlayId: 
+    onCompleteTarget: {fileID: 0}
+    onCompleteMethodName: 
+    onCompleteParmType: 0
+    onCompleteParmColor: {r: 0, g: 0, b: 0, a: 1}
+    onCompleteParmNumber: 0
+    onCompleteParmObject: {fileID: 0}
+    onCompleteParmQuaternion: {x: 0, y: 0, z: 0, w: 0}
+    onCompleteParmRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    onCompleteParmString: 
+    onCompleteParmVector2: {x: 0, y: 0}
+    onCompleteParmVector3: {x: 0, y: 0, z: 0}
+    onCompleteParmVector4: {x: 0, y: 0, z: 0, w: 0}
+  globalDelay: 0
+  globalTimeScale: 1
+  sortMode: 0
+  creationTime: 1
+  destroyAfterSetup: 1
