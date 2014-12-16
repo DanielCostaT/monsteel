@@ -426,7 +426,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 8404431}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -585, y: -323, z: 0}
+  m_LocalPosition: {x: -522, y: -317, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 501588171}
@@ -526,8 +526,8 @@ MonoBehaviour:
         height: 0
     duration: 1
     tweenFrom: 1
-    paused: 0
-    autoKill: 1
+    paused: 1
+    autoKill: 0
     updateType: 0
     delay: 10
     id: P1Q2
@@ -1183,6 +1183,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 85145678}
   - 114: {fileID: 85145679}
+  - 114: {fileID: 85145680}
   m_Layer: 0
   m_Name: Quadro1
   m_TagString: Untagged
@@ -1197,8 +1198,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 85145677}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -17, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0, y: -36, z: 0}
+  m_LocalScale: {x: .935857892, y: .935857892, z: .935857892}
   m_Children:
   - {fileID: 1477001459}
   - {fileID: 659612272}
@@ -1243,6 +1244,117 @@ MonoBehaviour:
   hideIfOffScreen: 0
   keepAspectRatio: 0
   aspectRatio: 1
+--- !u!114 &85145680
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 85145677}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05f1b1516c6174942a3dcd70a1d59428, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tweenDatas:
+  - _targetType: UnityEngine.Transform, UnityEngine
+    target: {fileID: 85145678}
+    targetRoot: {fileID: 85145677}
+    _targetPath: Quadro1.transform
+    targetName: transform
+    foldout: 1
+    isActive: 1
+    creationTime: 4
+    propDatas:
+    - _propType: UnityEngine.Vector3, UnityEngine
+      _pluginType: Holoville.HOTween.Plugins.Core.PlugVector3, HOTween
+      _valueType: UnityEngine.Vector3, UnityEngine
+      propName: localPosition
+      shortPropType: Vector3
+      isRelative: 0
+      isActive: 1
+      endValVector2: {x: 0, y: 0}
+      endValVector3: {x: 54, y: -36, z: 0}
+      endValVector4: {x: 0, y: 0, z: 0, w: 0}
+      endValFloat: 0
+      endValInt: 0
+      endValString: 
+      endValColor: {r: 1, g: 1, b: 1, a: 1}
+      endValRect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 0
+        height: 0
+    - _propType: UnityEngine.Vector3, UnityEngine
+      _pluginType: Holoville.HOTween.Plugins.Core.PlugVector3, HOTween
+      _valueType: UnityEngine.Vector3, UnityEngine
+      propName: localScale
+      shortPropType: Vector3
+      isRelative: 0
+      isActive: 1
+      endValVector2: {x: 0, y: 0}
+      endValVector3: {x: .899999976, y: .899999976, z: .899999976}
+      endValVector4: {x: 0, y: 0, z: 0, w: 0}
+      endValFloat: 0
+      endValInt: 0
+      endValString: 
+      endValColor: {r: 1, g: 1, b: 1, a: 1}
+      endValRect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 0
+        height: 0
+    duration: 5
+    tweenFrom: 1
+    paused: 1
+    autoKill: 0
+    updateType: 0
+    delay: 0
+    id: P1Q1
+    loopType: 0
+    loops: 1
+    timeScale: 1
+    easeType: 5
+    animationCurve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - time: 1
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    onCompleteActionType: 0
+    onCompletePlayId: 
+    onCompleteTarget: {fileID: 0}
+    onCompleteMethodName: 
+    onCompleteParmType: 0
+    onCompleteParmColor: {r: 0, g: 0, b: 0, a: 1}
+    onCompleteParmNumber: 0
+    onCompleteParmObject: {fileID: 0}
+    onCompleteParmQuaternion: {x: 0, y: 0, z: 0, w: 0}
+    onCompleteParmRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    onCompleteParmString: 
+    onCompleteParmVector2: {x: 0, y: 0}
+    onCompleteParmVector3: {x: 0, y: 0, z: 0}
+    onCompleteParmVector4: {x: 0, y: 0, z: 0, w: 0}
+  globalDelay: 0
+  globalTimeScale: 1
+  sortMode: 0
+  creationTime: 4
+  destroyAfterSetup: 0
 --- !u!1 &91362398
 GameObject:
   m_ObjectHideFlags: 0
@@ -1319,6 +1431,111 @@ MonoBehaviour:
   bottomType: 1
   topType: 1
   mSprite: {fileID: 21300000, guid: 6125d3a1aab35a1418bf705ef8e131f9, type: 3}
+  mMat: {fileID: 0}
+  mShader: {fileID: 4800000, guid: e75727d9555d9d14ca51d91908c681bc, type: 3}
+  mBorder: {x: 0, y: 0, z: 0, w: 0}
+  nextSprite: {fileID: 0}
+--- !u!1 &112280625
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 112280626}
+  - 114: {fileID: 112280629}
+  - 65: {fileID: 112280628}
+  - 114: {fileID: 112280627}
+  m_Layer: 0
+  m_Name: SmokeFXInteraction
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &112280626
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 112280625}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 349, y: -204, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 501588171}
+  m_RootOrder: 4
+--- !u!114 &112280627
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 112280625}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c562b72e3682c9d4eaaac7f517b85995, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!65 &112280628
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 112280625}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 136, y: 136, z: 0}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &112280629
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 112280625}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e96b31ce75e592f45a1cff563a4869db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  leftAnchor:
+    target: {fileID: 0}
+    relative: 0
+    absolute: 0
+  rightAnchor:
+    target: {fileID: 0}
+    relative: 1
+    absolute: 0
+  bottomAnchor:
+    target: {fileID: 0}
+    relative: 0
+    absolute: 0
+  topAnchor:
+    target: {fileID: 0}
+    relative: 1
+    absolute: 0
+  updateAnchors: 1
+  mColor: {r: 1, g: 1, b: 1, a: .0117647061}
+  mPivot: 4
+  mWidth: 136
+  mHeight: 136
+  mDepth: 8
+  autoResizeBoxCollider: 1
+  hideIfOffScreen: 0
+  keepAspectRatio: 1
+  aspectRatio: 1
+  mType: 0
+  mFillDirection: 4
+  mFillAmount: 1
+  mInvert: 0
+  mFlip: 0
+  centerType: 1
+  leftType: 1
+  rightType: 1
+  bottomType: 1
+  topType: 1
+  mSprite: {fileID: 21300000, guid: dd9331fb19f6b2943a22437bab928d36, type: 3}
   mMat: {fileID: 0}
   mShader: {fileID: 4800000, guid: e75727d9555d9d14ca51d91908c681bc, type: 3}
   mBorder: {x: 0, y: 0, z: 0, w: 0}
@@ -2177,6 +2394,178 @@ MonoBehaviour:
   mShader: {fileID: 4800000, guid: e75727d9555d9d14ca51d91908c681bc, type: 3}
   mBorder: {x: 0, y: 0, z: 0, w: 0}
   nextSprite: {fileID: 0}
+--- !u!1 &226186668
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 226186669}
+  - 114: {fileID: 226186671}
+  - 114: {fileID: 226186670}
+  m_Layer: 0
+  m_Name: Fumaca
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &226186669
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 226186668}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 205.999878, y: -203.999664, z: 0}
+  m_LocalScale: {x: .999935985, y: .999935985, z: .999935985}
+  m_Children: []
+  m_Father: {fileID: 501588171}
+  m_RootOrder: 8
+--- !u!114 &226186670
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 226186668}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05f1b1516c6174942a3dcd70a1d59428, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tweenDatas:
+  - _targetType: UI2DSprite, Assembly-CSharp
+    target: {fileID: 226186671}
+    targetRoot: {fileID: 226186668}
+    _targetPath: Fumaca.UI2DSprite
+    targetName: UI2DSprite
+    foldout: 1
+    isActive: 1
+    creationTime: 2
+    propDatas:
+    - _propType: System.Single, mscorlib
+      _pluginType: Holoville.HOTween.Plugins.Core.PlugFloat, HOTween
+      _valueType: System.Single, mscorlib
+      propName: fillAmount
+      shortPropType: Single
+      isRelative: 0
+      isActive: 1
+      endValVector2: {x: 0, y: 0}
+      endValVector3: {x: 0, y: 0, z: 0}
+      endValVector4: {x: 0, y: 0, z: 0, w: 0}
+      endValFloat: 0
+      endValInt: 0
+      endValString: 
+      endValColor: {r: 1, g: 1, b: 1, a: 1}
+      endValRect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 0
+        height: 0
+    duration: 1
+    tweenFrom: 1
+    paused: 1
+    autoKill: 0
+    updateType: 0
+    delay: 9.30000019
+    id: P1Q2
+    loopType: 0
+    loops: 1
+    timeScale: 1
+    easeType: 5
+    animationCurve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - time: 1
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    onCompleteActionType: 0
+    onCompletePlayId: 
+    onCompleteTarget: {fileID: 0}
+    onCompleteMethodName: 
+    onCompleteParmType: 0
+    onCompleteParmColor: {r: 0, g: 0, b: 0, a: 1}
+    onCompleteParmNumber: 0
+    onCompleteParmObject: {fileID: 0}
+    onCompleteParmQuaternion: {x: 0, y: 0, z: 0, w: 0}
+    onCompleteParmRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    onCompleteParmString: 
+    onCompleteParmVector2: {x: 0, y: 0}
+    onCompleteParmVector3: {x: 0, y: 0, z: 0}
+    onCompleteParmVector4: {x: 0, y: 0, z: 0, w: 0}
+  globalDelay: 0
+  globalTimeScale: 1
+  sortMode: 0
+  creationTime: 2
+  destroyAfterSetup: 0
+--- !u!114 &226186671
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 226186668}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e96b31ce75e592f45a1cff563a4869db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  leftAnchor:
+    target: {fileID: 0}
+    relative: 0
+    absolute: 0
+  rightAnchor:
+    target: {fileID: 0}
+    relative: 1
+    absolute: 0
+  bottomAnchor:
+    target: {fileID: 0}
+    relative: 0
+    absolute: 0
+  topAnchor:
+    target: {fileID: 0}
+    relative: 1
+    absolute: 0
+  updateAnchors: 1
+  mColor: {r: 1, g: 1, b: 1, a: 1}
+  mPivot: 4
+  mWidth: 554
+  mHeight: 216
+  mDepth: 3
+  autoResizeBoxCollider: 0
+  hideIfOffScreen: 0
+  keepAspectRatio: 0
+  aspectRatio: 2.56481481
+  mType: 3
+  mFillDirection: 0
+  mFillAmount: 1
+  mInvert: 1
+  mFlip: 0
+  centerType: 1
+  leftType: 1
+  rightType: 1
+  bottomType: 1
+  topType: 1
+  mSprite: {fileID: 21300008, guid: 2f0f134b8d7302949a6bf7ed30f88661, type: 3}
+  mMat: {fileID: 0}
+  mShader: {fileID: 4800000, guid: 4452ae9431d4963409d269d31d79c83d, type: 3}
+  mBorder: {x: 0, y: 0, z: 0, w: 0}
+  nextSprite: {fileID: 0}
 --- !u!1 &248177312
 GameObject:
   m_ObjectHideFlags: 0
@@ -2991,6 +3380,7 @@ GameObject:
   - 4: {fileID: 368165437}
   - 20: {fileID: 368165439}
   - 114: {fileID: 368165438}
+  - 81: {fileID: 368165440}
   m_Layer: 0
   m_Name: Camera
   m_TagString: Untagged
@@ -3077,6 +3467,13 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: .0219999999
+--- !u!81 &368165440
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 368165436}
+  m_Enabled: 1
 --- !u!1 &371886254
 GameObject:
   m_ObjectHideFlags: 0
@@ -4115,6 +4512,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 501588171}
   - 114: {fileID: 501588172}
+  - 114: {fileID: 501588173}
   m_Layer: 0
   m_Name: Quadro2
   m_TagString: Untagged
@@ -4129,16 +4527,18 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 501588170}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: -5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1664406193}
   - {fileID: 2020246023}
   - {fileID: 8404432}
-  - {fileID: 1482216697}
+  - {fileID: 1055439390}
+  - {fileID: 112280626}
   - {fileID: 1390764655}
   - {fileID: 1444786458}
   - {fileID: 1216107515}
+  - {fileID: 226186669}
   m_Father: {fileID: 2114536182}
   m_RootOrder: 1
 --- !u!114 &501588172
@@ -4178,6 +4578,97 @@ MonoBehaviour:
   hideIfOffScreen: 0
   keepAspectRatio: 0
   aspectRatio: 1
+--- !u!114 &501588173
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 501588170}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05f1b1516c6174942a3dcd70a1d59428, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tweenDatas:
+  - _targetType: UnityEngine.Transform, UnityEngine
+    target: {fileID: 501588171}
+    targetRoot: {fileID: 501588170}
+    _targetPath: Quadro2.transform
+    targetName: transform
+    foldout: 1
+    isActive: 1
+    creationTime: 2
+    propDatas:
+    - _propType: UnityEngine.Vector3, UnityEngine
+      _pluginType: Holoville.HOTween.Plugins.Core.PlugVector3, HOTween
+      _valueType: UnityEngine.Vector3, UnityEngine
+      propName: localPosition
+      shortPropType: Vector3
+      isRelative: 0
+      isActive: 1
+      endValVector2: {x: 0, y: 0}
+      endValVector3: {x: 86, y: -108, z: 0}
+      endValVector4: {x: 0, y: 0, z: 0, w: 0}
+      endValFloat: 0
+      endValInt: 0
+      endValString: 
+      endValColor: {r: 1, g: 1, b: 1, a: 1}
+      endValRect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 0
+        height: 0
+    duration: 1
+    tweenFrom: 1
+    paused: 1
+    autoKill: 0
+    updateType: 0
+    delay: 7
+    id: P1Q1
+    loopType: 0
+    loops: 1
+    timeScale: 1
+    easeType: 5
+    animationCurve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - time: 1
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    onCompleteActionType: 0
+    onCompletePlayId: 
+    onCompleteTarget: {fileID: 0}
+    onCompleteMethodName: 
+    onCompleteParmType: 0
+    onCompleteParmColor: {r: 0, g: 0, b: 0, a: 1}
+    onCompleteParmNumber: 0
+    onCompleteParmObject: {fileID: 0}
+    onCompleteParmQuaternion: {x: 0, y: 0, z: 0, w: 0}
+    onCompleteParmRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    onCompleteParmString: 
+    onCompleteParmVector2: {x: 0, y: 0}
+    onCompleteParmVector3: {x: 0, y: 0, z: 0}
+    onCompleteParmVector4: {x: 0, y: 0, z: 0, w: 0}
+  globalDelay: 0
+  globalTimeScale: 1
+  sortMode: 0
+  creationTime: 2
+  destroyAfterSetup: 0
 --- !u!1 &519422540
 GameObject:
   m_ObjectHideFlags: 0
@@ -4194,7 +4685,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &519422541
 Transform:
   m_ObjectHideFlags: 0
@@ -4258,7 +4749,7 @@ MonoBehaviour:
   alwaysOnScreen: 0
   anchorOffset: 0
   renderQueue: 0
-  startingRenderQueue: 3004
+  startingRenderQueue: 3009
   mAlpha: 1
   mClipping: 0
   mClipRange: {x: 0, y: 0, z: 300, w: 200}
@@ -5315,11 +5806,11 @@ MonoBehaviour:
         height: 0
     duration: 1
     tweenFrom: 0
-    paused: 0
-    autoKill: 1
+    paused: 1
+    autoKill: 0
     updateType: 0
     delay: 6
-    id: 
+    id: P1Q1
     loopType: 0
     loops: 1
     timeScale: 1
@@ -5362,7 +5853,7 @@ MonoBehaviour:
   globalTimeScale: 1
   sortMode: 0
   creationTime: 1
-  destroyAfterSetup: 1
+  destroyAfterSetup: 0
 --- !u!1 &714361120
 GameObject:
   m_ObjectHideFlags: 0
@@ -5630,7 +6121,7 @@ MonoBehaviour:
   alwaysOnScreen: 0
   anchorOffset: 0
   renderQueue: 0
-  startingRenderQueue: 3006
+  startingRenderQueue: 3011
   mAlpha: 1
   mClipping: 3
   mClipRange: {x: 650, y: -1, z: 1570, w: 134}
@@ -5922,7 +6413,7 @@ MonoBehaviour:
   alwaysOnScreen: 0
   anchorOffset: 0
   renderQueue: 0
-  startingRenderQueue: 3004
+  startingRenderQueue: 3001
   mAlpha: 1
   mClipping: 0
   mClipRange: {x: 0, y: 0, z: 300, w: 200}
@@ -6171,6 +6662,7 @@ GameObject:
   - 114: {fileID: 881292092}
   - 114: {fileID: 881292091}
   - 54: {fileID: 881292090}
+  - 114: {fileID: 881292093}
   m_Layer: 0
   m_Name: ComicUI
   m_TagString: Untagged
@@ -6272,6 +6764,17 @@ MonoBehaviour:
   maximumHeight: 1536
   adjustByDPI: 0
   shrinkPortraitUI: 0
+--- !u!114 &881292093
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 881292088}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6cc5027a3ec9694892dbcf2446725d1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &912703765
 GameObject:
   m_ObjectHideFlags: 0
@@ -6288,7 +6791,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &912703766
 Transform:
   m_ObjectHideFlags: 0
@@ -6296,7 +6799,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 912703765}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -45, z: 0}
+  m_LocalPosition: {x: 0, y: -426, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1218484931}
@@ -6471,12 +6974,12 @@ MonoBehaviour:
         y: 0
         width: 0
         height: 0
-    duration: .0799999982
+    duration: .0900000036
     tweenFrom: 0
     paused: 0
-    autoKill: 1
+    autoKill: 0
     updateType: 0
-    delay: 2
+    delay: 3
     id: P1Q1
     loopType: 1
     loops: 6
@@ -6516,10 +7019,84 @@ MonoBehaviour:
     onCompleteParmVector2: {x: 0, y: 0}
     onCompleteParmVector3: {x: 0, y: 0, z: 0}
     onCompleteParmVector4: {x: 0, y: 0, z: 0, w: 0}
+  - _targetType: UnityEngine.Light, UnityEngine
+    target: {fileID: 949259705}
+    targetRoot: {fileID: 949259704}
+    _targetPath: Directional light.light
+    targetName: light
+    foldout: 1
+    isActive: 1
+    creationTime: 3
+    propDatas:
+    - _propType: System.Single, mscorlib
+      _pluginType: Holoville.HOTween.Plugins.Core.PlugFloat, HOTween
+      _valueType: System.Single, mscorlib
+      propName: intensity
+      shortPropType: Single
+      isRelative: 0
+      isActive: 1
+      endValVector2: {x: 0, y: 0}
+      endValVector3: {x: 0, y: 0, z: 0}
+      endValVector4: {x: 0, y: 0, z: 0, w: 0}
+      endValFloat: 1.22000003
+      endValInt: 0
+      endValString: 
+      endValColor: {r: 1, g: 1, b: 1, a: 1}
+      endValRect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 0
+        height: 0
+    duration: .0900000036
+    tweenFrom: 0
+    paused: 0
+    autoKill: 0
+    updateType: 0
+    delay: 4
+    id: P1Q1
+    loopType: 1
+    loops: 6
+    timeScale: 1
+    easeType: 5
+    animationCurve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - time: 1
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    onCompleteActionType: 0
+    onCompletePlayId: 
+    onCompleteTarget: {fileID: 0}
+    onCompleteMethodName: 
+    onCompleteParmType: 0
+    onCompleteParmColor: {r: 0, g: 0, b: 0, a: 1}
+    onCompleteParmNumber: 0
+    onCompleteParmObject: {fileID: 0}
+    onCompleteParmQuaternion: {x: 0, y: 0, z: 0, w: 0}
+    onCompleteParmRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    onCompleteParmString: 
+    onCompleteParmVector2: {x: 0, y: 0}
+    onCompleteParmVector3: {x: 0, y: 0, z: 0}
+    onCompleteParmVector4: {x: 0, y: 0, z: 0, w: 0}
   globalDelay: 0
   globalTimeScale: 1
   sortMode: 0
-  creationTime: 2
+  creationTime: 3
   destroyAfterSetup: 0
 --- !u!1 &960180020
 GameObject:
@@ -7466,6 +8043,1375 @@ MonoBehaviour:
   callWhenFinished: 
   from: {r: .29411763, g: .29411763, b: .29411763, a: 1}
   to: {r: 1, g: 1, b: 1, a: 1}
+--- !u!1 &1055439389
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100000, guid: 92c1d7723208e4b4889975baf279f496, type: 2}
+  m_PrefabInternal: {fileID: 1219788445}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1055439390}
+  - 198: {fileID: 1055439392}
+  - 199: {fileID: 1055439391}
+  - 114: {fileID: 1055439393}
+  m_Layer: 8
+  m_Name: SmokeFX
+  m_TagString: FxTemporaire
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1055439390
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400000, guid: 92c1d7723208e4b4889975baf279f496, type: 2}
+  m_PrefabInternal: {fileID: 1219788445}
+  m_GameObject: {fileID: 1055439389}
+  m_LocalRotation: {x: -.707106829, y: 0, z: 0, w: .707106829}
+  m_LocalPosition: {x: 12657, y: -971, z: 1398}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 501588171}
+  m_RootOrder: 3
+--- !u!199 &1055439391
+ParticleSystemRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 19900000, guid: 92c1d7723208e4b4889975baf279f496,
+    type: 2}
+  m_PrefabInternal: {fileID: 1219788445}
+  m_GameObject: {fileID: 1055439389}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 2100000, guid: 99e23f3877c77604682d49df6c56b077, type: 2}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_RenderMode: 0
+  m_MaxParticleSize: 1
+  m_CameraVelocityScale: 0
+  m_VelocityScale: 0
+  m_LengthScale: 3
+  m_SortingFudge: 0
+  m_NormalDirection: 1
+  m_SortMode: 1
+  m_Mesh: {fileID: 0}
+  m_Mesh1: {fileID: 0}
+  m_Mesh2: {fileID: 0}
+  m_Mesh3: {fileID: 0}
+--- !u!198 &1055439392
+ParticleSystem:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 19800000, guid: 92c1d7723208e4b4889975baf279f496,
+    type: 2}
+  m_PrefabInternal: {fileID: 1219788445}
+  m_GameObject: {fileID: 1055439389}
+  lengthInSec: 3
+  startDelay: 0
+  speed: 1
+  randomSeed: 0
+  looping: 1
+  prewarm: 0
+  playOnAwake: 1
+  moveWithTransform: 0
+  InitialModule:
+    enabled: 1
+    startLifetime:
+      scalar: 1.20000005
+      maxCurve:
+        serializedVersion: 2
+        m_Curve:
+        - time: 0
+          value: 1
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+      minCurve:
+        serializedVersion: 2
+        m_Curve:
+        - time: 0
+          value: .833333313
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+      minMaxState: 3
+    startSpeed:
+      scalar: .75
+      maxCurve:
+        serializedVersion: 2
+        m_Curve:
+        - time: 0
+          value: 1
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+      minCurve:
+        serializedVersion: 2
+        m_Curve:
+        - time: 0
+          value: .333333343
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+      minMaxState: 3
+    startColor:
+      maxGradient:
+        key0:
+          serializedVersion: 2
+          rgba: 4278190335
+        key1:
+          serializedVersion: 2
+          rgba: 4278241023
+        key2:
+          serializedVersion: 2
+          rgba: 65346
+        key3:
+          serializedVersion: 2
+          rgba: 16776960
+        key4:
+          serializedVersion: 2
+          rgba: 16738560
+        key5:
+          serializedVersion: 2
+          rgba: 16711832
+        key6:
+          serializedVersion: 2
+          rgba: 8061183
+        key7:
+          serializedVersion: 2
+          rgba: 255
+        ctime0: 0
+        ctime1: 9175
+        ctime2: 18350
+        ctime3: 27525
+        ctime4: 36700
+        ctime5: 46530
+        ctime6: 55705
+        ctime7: 65535
+        atime0: 0
+        atime1: 65535
+        atime2: 0
+        atime3: 0
+        atime4: 0
+        atime5: 0
+        atime6: 0
+        atime7: 0
+        m_NumColorKeys: 8
+        m_NumAlphaKeys: 2
+      minGradient:
+        key0:
+          serializedVersion: 2
+          rgba: 4294961664
+        key1:
+          serializedVersion: 2
+          rgba: 4294928640
+        key2:
+          serializedVersion: 2
+          rgba: 16711832
+        key3:
+          serializedVersion: 2
+          rgba: 8061183
+        key4:
+          serializedVersion: 2
+          rgba: 255
+        key5:
+          serializedVersion: 2
+          rgba: 61951
+        key6:
+          serializedVersion: 2
+          rgba: 65410
+        key7:
+          serializedVersion: 2
+          rgba: 9043712
+        ctime0: 0
+        ctime1: 9175
+        ctime2: 18350
+        ctime3: 27525
+        ctime4: 36700
+        ctime5: 46530
+        ctime6: 55705
+        ctime7: 65535
+        atime0: 0
+        atime1: 65535
+        atime2: 0
+        atime3: 0
+        atime4: 0
+        atime5: 0
+        atime6: 0
+        atime7: 0
+        m_NumColorKeys: 8
+        m_NumAlphaKeys: 2
+      minColor:
+        serializedVersion: 2
+        rgba: 4294964480
+      maxColor:
+        serializedVersion: 2
+        rgba: 4294967295
+      minMaxState: 0
+    startSize:
+      scalar: 1.20000005
+      maxCurve:
+        serializedVersion: 2
+        m_Curve:
+        - time: 0
+          value: 1
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+      minCurve:
+        serializedVersion: 2
+        m_Curve:
+        - time: 0
+          value: .666666627
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+      minMaxState: 3
+    startRotation:
+      scalar: 0
+      maxCurve:
+        serializedVersion: 2
+        m_Curve:
+        - time: 0
+          value: 0
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+      minCurve:
+        serializedVersion: 2
+        m_Curve:
+        - time: 0
+          value: 0
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+      minMaxState: 0
+    gravityModifier: 0
+    inheritVelocity: .0500000007
+    maxNumParticles: 1000
+  ShapeModule:
+    serializedVersion: 2
+    enabled: 1
+    type: 2
+    radius: .400000006
+    angle: 0
+    length: 5
+    boxX: 1
+    boxY: 1
+    boxZ: 1
+    placementMode: 0
+    m_Mesh: {fileID: 0}
+    randomDirection: 0
+  EmissionModule:
+    enabled: 1
+    m_Type: 0
+    rate:
+      scalar: 20
+      maxCurve:
+        serializedVersion: 2
+        m_Curve:
+        - time: 0
+          value: 0
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+      minCurve:
+        serializedVersion: 2
+        m_Curve:
+        - time: 0
+          value: 0
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+      minMaxState: 0
+    cnt0: 5
+    cnt1: 30
+    cnt2: 30
+    cnt3: 30
+    time0: .0500000007
+    time1: 0
+    time2: 0
+    time3: 0
+    m_BurstCount: 0
+  SizeModule:
+    enabled: 1
+    curve:
+      scalar: 1
+      maxCurve:
+        serializedVersion: 2
+        m_Curve:
+        - time: 0
+          value: .713636339
+          inSlope: 1.74058807
+          outSlope: 1.74058807
+          tangentMode: 10
+        - time: .164521217
+          value: 1
+          inSlope: 1.74058807
+          outSlope: -0
+          tangentMode: 21
+        - time: .392592609
+          value: 1
+          inSlope: 0
+          outSlope: -1.64634156
+          tangentMode: 21
+        - time: 1
+          value: 0
+          inSlope: -1.64634156
+          outSlope: 0
+          tangentMode: 5
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+      minCurve:
+        serializedVersion: 2
+        m_Curve:
+        - time: 0
+          value: 0
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        - time: 1
+          value: 0
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+      minMaxState: 1
+  RotationModule:
+    enabled: 1
+    curve:
+      scalar: 6.98131704
+      maxCurve:
+        serializedVersion: 2
+        m_Curve:
+        - time: 0
+          value: 1
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+      minCurve:
+        serializedVersion: 2
+        m_Curve:
+        - time: 0
+          value: .5
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+      minMaxState: 3
+  ColorModule:
+    enabled: 1
+    gradient:
+      maxGradient:
+        key0:
+          serializedVersion: 2
+          rgba: 16777215
+        key1:
+          serializedVersion: 2
+          rgba: 4291611852
+        key2:
+          serializedVersion: 2
+          rgba: 3707764991
+        key3:
+          serializedVersion: 2
+          rgba: 16777215
+        key4:
+          serializedVersion: 2
+          rgba: 167
+        key5:
+          serializedVersion: 2
+          rgba: 0
+        key6:
+          serializedVersion: 2
+          rgba: 0
+        key7:
+          serializedVersion: 2
+          rgba: 0
+        ctime0: 0
+        ctime1: 65535
+        ctime2: 35081
+        ctime3: 36044
+        ctime4: 65535
+        ctime5: 0
+        ctime6: 0
+        ctime7: 0
+        atime0: 0
+        atime1: 6554
+        atime2: 26214
+        atime3: 65535
+        atime4: 65535
+        atime5: 0
+        atime6: 0
+        atime7: 0
+        m_NumColorKeys: 2
+        m_NumAlphaKeys: 4
+      minGradient:
+        key0:
+          serializedVersion: 2
+          rgba: 4294967295
+        key1:
+          serializedVersion: 2
+          rgba: 4294967295
+        key2:
+          serializedVersion: 2
+          rgba: 0
+        key3:
+          serializedVersion: 2
+          rgba: 0
+        key4:
+          serializedVersion: 2
+          rgba: 0
+        key5:
+          serializedVersion: 2
+          rgba: 0
+        key6:
+          serializedVersion: 2
+          rgba: 0
+        key7:
+          serializedVersion: 2
+          rgba: 0
+        ctime0: 0
+        ctime1: 65535
+        ctime2: 0
+        ctime3: 0
+        ctime4: 0
+        ctime5: 0
+        ctime6: 0
+        ctime7: 0
+        atime0: 0
+        atime1: 65535
+        atime2: 0
+        atime3: 0
+        atime4: 0
+        atime5: 0
+        atime6: 0
+        atime7: 0
+        m_NumColorKeys: 2
+        m_NumAlphaKeys: 2
+      minColor:
+        serializedVersion: 2
+        rgba: 4294967295
+      maxColor:
+        serializedVersion: 2
+        rgba: 4294967295
+      minMaxState: 1
+  UVModule:
+    enabled: 0
+    frameOverTime:
+      scalar: 1
+      maxCurve:
+        serializedVersion: 2
+        m_Curve:
+        - time: 0
+          value: 1
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+      minCurve:
+        serializedVersion: 2
+        m_Curve:
+        - time: 0
+          value: 0
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+      minMaxState: 3
+    tilesX: 4
+    tilesY: 1
+    animationType: 0
+    rowIndex: 0
+    cycles: 1
+    randomRow: 1
+  VelocityModule:
+    enabled: 0
+    x:
+      scalar: 0
+      maxCurve:
+        serializedVersion: 2
+        m_Curve:
+        - time: 0
+          value: 1
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        - time: 1
+          value: 1
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+      minCurve:
+        serializedVersion: 2
+        m_Curve:
+        - time: 0
+          value: 0
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        - time: 1
+          value: 0
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+      minMaxState: 0
+    y:
+      scalar: 0
+      maxCurve:
+        serializedVersion: 2
+        m_Curve:
+        - time: 0
+          value: 1
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        - time: 1
+          value: 1
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+      minCurve:
+        serializedVersion: 2
+        m_Curve:
+        - time: 0
+          value: 0
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        - time: 1
+          value: 0
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+      minMaxState: 0
+    z:
+      scalar: 0
+      maxCurve:
+        serializedVersion: 2
+        m_Curve:
+        - time: 0
+          value: 1
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        - time: 1
+          value: 1
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+      minCurve:
+        serializedVersion: 2
+        m_Curve:
+        - time: 0
+          value: 0
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        - time: 1
+          value: 0
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+      minMaxState: 0
+    inWorldSpace: 0
+  ForceModule:
+    enabled: 0
+    x:
+      scalar: 0
+      maxCurve:
+        serializedVersion: 2
+        m_Curve:
+        - time: 0
+          value: 1
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        - time: 1
+          value: 1
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+      minCurve:
+        serializedVersion: 2
+        m_Curve:
+        - time: 0
+          value: 0
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        - time: 1
+          value: 0
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+      minMaxState: 0
+    y:
+      scalar: 0
+      maxCurve:
+        serializedVersion: 2
+        m_Curve:
+        - time: 0
+          value: 1
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        - time: 1
+          value: 1
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+      minCurve:
+        serializedVersion: 2
+        m_Curve:
+        - time: 0
+          value: 0
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        - time: 1
+          value: 0
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+      minMaxState: 0
+    z:
+      scalar: 0
+      maxCurve:
+        serializedVersion: 2
+        m_Curve:
+        - time: 0
+          value: 1
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        - time: 1
+          value: 1
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+      minCurve:
+        serializedVersion: 2
+        m_Curve:
+        - time: 0
+          value: 0
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        - time: 1
+          value: 0
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+      minMaxState: 0
+    inWorldSpace: 0
+    randomizePerFrame: 0
+  ExternalForcesModule:
+    enabled: 0
+    multiplier: 1
+  ClampVelocityModule:
+    enabled: 0
+    x:
+      scalar: 1
+      maxCurve:
+        serializedVersion: 2
+        m_Curve:
+        - time: 0
+          value: 1
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        - time: 1
+          value: 1
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+      minCurve:
+        serializedVersion: 2
+        m_Curve:
+        - time: 0
+          value: 0
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        - time: 1
+          value: 0
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+      minMaxState: 0
+    y:
+      scalar: 1
+      maxCurve:
+        serializedVersion: 2
+        m_Curve:
+        - time: 0
+          value: 1
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        - time: 1
+          value: 1
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+      minCurve:
+        serializedVersion: 2
+        m_Curve:
+        - time: 0
+          value: 0
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        - time: 1
+          value: 0
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+      minMaxState: 0
+    z:
+      scalar: 1
+      maxCurve:
+        serializedVersion: 2
+        m_Curve:
+        - time: 0
+          value: 1
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        - time: 1
+          value: 1
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+      minCurve:
+        serializedVersion: 2
+        m_Curve:
+        - time: 0
+          value: 0
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        - time: 1
+          value: 0
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+      minMaxState: 0
+    magnitude:
+      scalar: 12
+      maxCurve:
+        serializedVersion: 2
+        m_Curve:
+        - time: 0
+          value: 1
+          inSlope: 14.9528313
+          outSlope: -1.68750012
+          tangentMode: 21
+        - time: .592592537
+          value: 0
+          inSlope: -1.68750012
+          outSlope: -1.68750012
+          tangentMode: 10
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+      minCurve:
+        serializedVersion: 2
+        m_Curve:
+        - time: 0
+          value: 0
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        - time: 1
+          value: 0
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+      minMaxState: 1
+    separateAxis: 0
+    inWorldSpace: 0
+    dampen: 1
+  SizeBySpeedModule:
+    enabled: 0
+    curve:
+      scalar: 1
+      maxCurve:
+        serializedVersion: 2
+        m_Curve:
+        - time: 0
+          value: 1
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        - time: 1
+          value: 1
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+      minCurve:
+        serializedVersion: 2
+        m_Curve:
+        - time: 0
+          value: 0
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        - time: 1
+          value: 0
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+      minMaxState: 1
+    range: {x: 0, y: 1}
+  RotationBySpeedModule:
+    enabled: 0
+    curve:
+      scalar: .785398185
+      maxCurve:
+        serializedVersion: 2
+        m_Curve:
+        - time: 0
+          value: 1
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        - time: 1
+          value: 1
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+      minCurve:
+        serializedVersion: 2
+        m_Curve:
+        - time: 0
+          value: 0
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        - time: 1
+          value: 0
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+      minMaxState: 0
+    range: {x: 0, y: 1}
+  ColorBySpeedModule:
+    enabled: 0
+    gradient:
+      maxGradient:
+        key0:
+          serializedVersion: 2
+          rgba: 4294967295
+        key1:
+          serializedVersion: 2
+          rgba: 4294967295
+        key2:
+          serializedVersion: 2
+          rgba: 0
+        key3:
+          serializedVersion: 2
+          rgba: 0
+        key4:
+          serializedVersion: 2
+          rgba: 0
+        key5:
+          serializedVersion: 2
+          rgba: 0
+        key6:
+          serializedVersion: 2
+          rgba: 0
+        key7:
+          serializedVersion: 2
+          rgba: 0
+        ctime0: 0
+        ctime1: 65535
+        ctime2: 0
+        ctime3: 0
+        ctime4: 0
+        ctime5: 0
+        ctime6: 0
+        ctime7: 0
+        atime0: 0
+        atime1: 65535
+        atime2: 0
+        atime3: 0
+        atime4: 0
+        atime5: 0
+        atime6: 0
+        atime7: 0
+        m_NumColorKeys: 2
+        m_NumAlphaKeys: 2
+      minGradient:
+        key0:
+          serializedVersion: 2
+          rgba: 4294967295
+        key1:
+          serializedVersion: 2
+          rgba: 4294967295
+        key2:
+          serializedVersion: 2
+          rgba: 0
+        key3:
+          serializedVersion: 2
+          rgba: 0
+        key4:
+          serializedVersion: 2
+          rgba: 0
+        key5:
+          serializedVersion: 2
+          rgba: 0
+        key6:
+          serializedVersion: 2
+          rgba: 0
+        key7:
+          serializedVersion: 2
+          rgba: 0
+        ctime0: 0
+        ctime1: 65535
+        ctime2: 0
+        ctime3: 0
+        ctime4: 0
+        ctime5: 0
+        ctime6: 0
+        ctime7: 0
+        atime0: 0
+        atime1: 65535
+        atime2: 0
+        atime3: 0
+        atime4: 0
+        atime5: 0
+        atime6: 0
+        atime7: 0
+        m_NumColorKeys: 2
+        m_NumAlphaKeys: 2
+      minColor:
+        serializedVersion: 2
+        rgba: 4294967295
+      maxColor:
+        serializedVersion: 2
+        rgba: 4294967295
+      minMaxState: 1
+    range: {x: 0, y: 1}
+  CollisionModule:
+    enabled: 0
+    type: 0
+    plane0: {fileID: 0}
+    plane1: {fileID: 0}
+    plane2: {fileID: 0}
+    plane3: {fileID: 0}
+    plane4: {fileID: 0}
+    plane5: {fileID: 0}
+    dampen: 0
+    bounce: 1
+    energyLossOnCollision: 0
+    minKillSpeed: 0
+    particleRadius: .00999999978
+    collidesWith:
+      serializedVersion: 2
+      m_Bits: 4294967295
+    quality: 0
+    voxelSize: .5
+    collisionMessages: 0
+  SubModule:
+    enabled: 0
+    subEmitterBirth: {fileID: 0}
+    subEmitterBirth1: {fileID: 0}
+    subEmitterCollision: {fileID: 0}
+    subEmitterCollision1: {fileID: 0}
+    subEmitterDeath: {fileID: 0}
+    subEmitterDeath1: {fileID: 0}
+--- !u!114 &1055439393
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1055439389}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05f1b1516c6174942a3dcd70a1d59428, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tweenDatas:
+  - _targetType: UnityEngine.Transform, UnityEngine
+    target: {fileID: 1055439390}
+    targetRoot: {fileID: 1055439389}
+    _targetPath: SmokeFX.transform
+    targetName: transform
+    foldout: 1
+    isActive: 1
+    creationTime: 2
+    propDatas:
+    - _propType: UnityEngine.Vector3, UnityEngine
+      _pluginType: Holoville.HOTween.Plugins.PlugVector3X, HOTween
+      _valueType: System.Single, mscorlib
+      propName: localPosition
+      shortPropType: Vector3
+      isRelative: 1
+      isActive: 1
+      endValVector2: {x: 0, y: 0}
+      endValVector3: {x: 0, y: 0, z: 0}
+      endValVector4: {x: 0, y: 0, z: 0, w: 0}
+      endValFloat: -2000
+      endValInt: 0
+      endValString: 
+      endValColor: {r: 1, g: 1, b: 1, a: 1}
+      endValRect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 0
+        height: 0
+    duration: 1
+    tweenFrom: 0
+    paused: 1
+    autoKill: 0
+    updateType: 0
+    delay: 9.30000019
+    id: P1Q2
+    loopType: 0
+    loops: 1
+    timeScale: 1
+    easeType: 5
+    animationCurve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - time: 1
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    onCompleteActionType: 0
+    onCompletePlayId: 
+    onCompleteTarget: {fileID: 0}
+    onCompleteMethodName: 
+    onCompleteParmType: 0
+    onCompleteParmColor: {r: 0, g: 0, b: 0, a: 1}
+    onCompleteParmNumber: 0
+    onCompleteParmObject: {fileID: 0}
+    onCompleteParmQuaternion: {x: 0, y: 0, z: 0, w: 0}
+    onCompleteParmRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    onCompleteParmString: 
+    onCompleteParmVector2: {x: 0, y: 0}
+    onCompleteParmVector3: {x: 0, y: 0, z: 0}
+    onCompleteParmVector4: {x: 0, y: 0, z: 0, w: 0}
+  - _targetType: UnityEngine.ParticleSystem, UnityEngine
+    target: {fileID: 1055439392}
+    targetRoot: {fileID: 1055439389}
+    _targetPath: SmokeFX.particleSystem
+    targetName: particleSystem
+    foldout: 1
+    isActive: 1
+    creationTime: 3
+    propDatas:
+    - _propType: System.Single, mscorlib
+      _pluginType: Holoville.HOTween.Plugins.Core.PlugFloat, HOTween
+      _valueType: System.Single, mscorlib
+      propName: emissionRate
+      shortPropType: Single
+      isRelative: 0
+      isActive: 1
+      endValVector2: {x: 0, y: 0}
+      endValVector3: {x: 0, y: 0, z: 0}
+      endValVector4: {x: 0, y: 0, z: 0, w: 0}
+      endValFloat: 0
+      endValInt: 0
+      endValString: 
+      endValColor: {r: 1, g: 1, b: 1, a: 1}
+      endValRect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 0
+        height: 0
+    duration: .100000001
+    tweenFrom: 1
+    paused: 1
+    autoKill: 0
+    updateType: 0
+    delay: 8.5
+    id: P1Q1
+    loopType: 0
+    loops: 1
+    timeScale: 1
+    easeType: 5
+    animationCurve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - time: 1
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    onCompleteActionType: 4
+    onCompletePlayId: 
+    onCompleteTarget: {fileID: 881292088}
+    onCompleteMethodName: PauseNextTweens
+    onCompleteParmType: 0
+    onCompleteParmColor: {r: 0, g: 0, b: 0, a: 1}
+    onCompleteParmNumber: 0
+    onCompleteParmObject: {fileID: 0}
+    onCompleteParmQuaternion: {x: 0, y: 0, z: 0, w: 0}
+    onCompleteParmRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    onCompleteParmString: 
+    onCompleteParmVector2: {x: 0, y: 0}
+    onCompleteParmVector3: {x: 0, y: 0, z: 0}
+    onCompleteParmVector4: {x: 0, y: 0, z: 0, w: 0}
+  - _targetType: UnityEngine.Transform, UnityEngine
+    target: {fileID: 1055439390}
+    targetRoot: {fileID: 1055439389}
+    _targetPath: SmokeFX.transform
+    targetName: transform
+    foldout: 1
+    isActive: 1
+    creationTime: 5
+    propDatas:
+    - _propType: UnityEngine.Vector3, UnityEngine
+      _pluginType: Holoville.HOTween.Plugins.PlugVector3Y, HOTween
+      _valueType: System.Single, mscorlib
+      propName: localPosition
+      shortPropType: Vector3
+      isRelative: 1
+      isActive: 1
+      endValVector2: {x: 0, y: 0}
+      endValVector3: {x: 0, y: 0, z: 0}
+      endValVector4: {x: 0, y: 0, z: 0, w: 0}
+      endValFloat: -300
+      endValInt: 0
+      endValString: 
+      endValColor: {r: 1, g: 1, b: 1, a: 1}
+      endValRect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 0
+        height: 0
+    duration: .5
+    tweenFrom: 0
+    paused: 1
+    autoKill: 0
+    updateType: 0
+    delay: 9.30000019
+    id: P1Q2
+    loopType: 1
+    loops: 2
+    timeScale: 1
+    easeType: 0
+    animationCurve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - time: 1
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    onCompleteActionType: 0
+    onCompletePlayId: 
+    onCompleteTarget: {fileID: 0}
+    onCompleteMethodName: 
+    onCompleteParmType: 0
+    onCompleteParmColor: {r: 0, g: 0, b: 0, a: 1}
+    onCompleteParmNumber: 0
+    onCompleteParmObject: {fileID: 0}
+    onCompleteParmQuaternion: {x: 0, y: 0, z: 0, w: 0}
+    onCompleteParmRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    onCompleteParmString: 
+    onCompleteParmVector2: {x: 0, y: 0}
+    onCompleteParmVector3: {x: 0, y: 0, z: 0}
+    onCompleteParmVector4: {x: 0, y: 0, z: 0, w: 0}
+  - _targetType: UnityEngine.ParticleSystem, UnityEngine
+    target: {fileID: 1055439392}
+    targetRoot: {fileID: 1055439389}
+    _targetPath: SmokeFX.particleSystem
+    targetName: particleSystem
+    foldout: 1
+    isActive: 1
+    creationTime: 6
+    propDatas:
+    - _propType: System.Single, mscorlib
+      _pluginType: Holoville.HOTween.Plugins.Core.PlugFloat, HOTween
+      _valueType: System.Single, mscorlib
+      propName: emissionRate
+      shortPropType: Single
+      isRelative: 0
+      isActive: 1
+      endValVector2: {x: 0, y: 0}
+      endValVector3: {x: 0, y: 0, z: 0}
+      endValVector4: {x: 0, y: 0, z: 0, w: 0}
+      endValFloat: 0
+      endValInt: 0
+      endValString: 
+      endValColor: {r: 1, g: 1, b: 1, a: 1}
+      endValRect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 0
+        height: 0
+    duration: 1.10000002
+    tweenFrom: 0
+    paused: 1
+    autoKill: 0
+    updateType: 0
+    delay: 9.30000019
+    id: P1Q2
+    loopType: 0
+    loops: 1
+    timeScale: 1
+    easeType: 0
+    animationCurve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - time: 1
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    onCompleteActionType: 0
+    onCompletePlayId: 
+    onCompleteTarget: {fileID: 0}
+    onCompleteMethodName: 
+    onCompleteParmType: 0
+    onCompleteParmColor: {r: 0, g: 0, b: 0, a: 1}
+    onCompleteParmNumber: 0
+    onCompleteParmObject: {fileID: 0}
+    onCompleteParmQuaternion: {x: 0, y: 0, z: 0, w: 0}
+    onCompleteParmRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    onCompleteParmString: 
+    onCompleteParmVector2: {x: 0, y: 0}
+    onCompleteParmVector3: {x: 0, y: 0, z: 0}
+    onCompleteParmVector4: {x: 0, y: 0, z: 0, w: 0}
+  globalDelay: 0
+  globalTimeScale: 1
+  sortMode: 0
+  creationTime: 6
+  destroyAfterSetup: 0
 --- !u!1 &1055707645
 GameObject:
   m_ObjectHideFlags: 0
@@ -8237,7 +10183,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 501588171}
-  m_RootOrder: 6
+  m_RootOrder: 7
 --- !u!114 &1216107516
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8281,11 +10227,11 @@ MonoBehaviour:
         height: 0
     duration: 1
     tweenFrom: 1
-    paused: 0
-    autoKill: 1
+    paused: 1
+    autoKill: 0
     updateType: 0
     delay: 8
-    id: 
+    id: P1Q1
     loopType: 0
     loops: 1
     timeScale: 1
@@ -8356,7 +10302,7 @@ MonoBehaviour:
     duration: 1
     tweenFrom: 0
     paused: 1
-    autoKill: 1
+    autoKill: 0
     updateType: 0
     delay: 0
     id: vela
@@ -8685,6 +10631,70 @@ MonoBehaviour:
   display: 0
   draggable: 0
   myFadingSpeed: 0
+--- !u!1001 &1219788445
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 501588171}
+    m_Modifications:
+    - target: {fileID: 400000, guid: 92c1d7723208e4b4889975baf279f496, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 12657
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 92c1d7723208e4b4889975baf279f496, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -971
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 92c1d7723208e4b4889975baf279f496, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 1398
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 92c1d7723208e4b4889975baf279f496, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -.707106829
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 92c1d7723208e4b4889975baf279f496, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 92c1d7723208e4b4889975baf279f496, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 92c1d7723208e4b4889975baf279f496, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: .707106829
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 92c1d7723208e4b4889975baf279f496, type: 2}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 92c1d7723208e4b4889975baf279f496, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 92c1d7723208e4b4889975baf279f496, type: 2}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 92c1d7723208e4b4889975baf279f496, type: 2}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 19800000, guid: 92c1d7723208e4b4889975baf279f496, type: 2}
+      propertyPath: startDelay
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 19800000, guid: 92c1d7723208e4b4889975baf279f496, type: 2}
+      propertyPath: playOnAwake
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 92c1d7723208e4b4889975baf279f496, type: 2}
+  m_RootGameObject: {fileID: 1055439389}
+  m_IsPrefabParent: 0
+  m_IsExploded: 1
 --- !u!1 &1234395458
 GameObject:
   m_ObjectHideFlags: 0
@@ -8757,8 +10767,8 @@ MonoBehaviour:
         height: 0
     duration: .400000006
     tweenFrom: 1
-    paused: 0
-    autoKill: 1
+    paused: 1
+    autoKill: 0
     updateType: 0
     delay: 0
     id: P1Q1
@@ -8831,11 +10841,11 @@ MonoBehaviour:
         height: 0
     duration: 1
     tweenFrom: 0
-    paused: 0
-    autoKill: 1
+    paused: 1
+    autoKill: 0
     updateType: 0
     delay: 6
-    id: 
+    id: P1Q1
     loopType: 0
     loops: 1
     timeScale: 1
@@ -10027,11 +12037,11 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1390764654}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -194.000015, y: -174, z: 0}
+  m_LocalPosition: {x: -194, y: -205, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 501588171}
-  m_RootOrder: 4
+  m_RootOrder: 5
 --- !u!114 &1390764656
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10106,16 +12116,16 @@ MonoBehaviour:
     creationTime: 2
     propDatas:
     - _propType: UnityEngine.Vector3, UnityEngine
-      _pluginType: Holoville.HOTween.Plugins.Core.PlugVector3, HOTween
-      _valueType: UnityEngine.Vector3, UnityEngine
+      _pluginType: Holoville.HOTween.Plugins.PlugVector3X, HOTween
+      _valueType: System.Single, mscorlib
       propName: localPosition
       shortPropType: Vector3
-      isRelative: 0
+      isRelative: 1
       isActive: 1
       endValVector2: {x: 0, y: 0}
       endValVector3: {x: 352, y: -196, z: 0}
       endValVector4: {x: 0, y: 0, z: 0, w: 0}
-      endValFloat: 0
+      endValFloat: 600
       endValInt: 0
       endValString: 
       endValColor: {r: 1, g: 1, b: 1, a: 1}
@@ -10148,14 +12158,14 @@ MonoBehaviour:
     duration: 1
     tweenFrom: 1
     paused: 0
-    autoKill: 1
+    autoKill: 0
     updateType: 0
     delay: 9
     id: P1Q2
     loopType: 0
     loops: 1
     timeScale: 1
-    easeType: 5
+    easeType: 0
     animationCurve:
       serializedVersion: 2
       m_Curve:
@@ -10171,10 +12181,10 @@ MonoBehaviour:
         tangentMode: 0
       m_PreInfinity: 2
       m_PostInfinity: 2
-    onCompleteActionType: 0
+    onCompleteActionType: 4
     onCompletePlayId: 
-    onCompleteTarget: {fileID: 0}
-    onCompleteMethodName: 
+    onCompleteTarget: {fileID: 8404431}
+    onCompleteMethodName: Play
     onCompleteParmType: 0
     onCompleteParmColor: {r: 0, g: 0, b: 0, a: 1}
     onCompleteParmNumber: 0
@@ -10221,13 +12231,87 @@ MonoBehaviour:
         height: 0
     duration: .200000003
     tweenFrom: 1
-    paused: 0
-    autoKill: 1
+    paused: 1
+    autoKill: 0
     updateType: 0
     delay: 9
     id: P1Q2
     loopType: 0
     loops: 1
+    timeScale: 1
+    easeType: 0
+    animationCurve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - time: 1
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    onCompleteActionType: 0
+    onCompletePlayId: 
+    onCompleteTarget: {fileID: 0}
+    onCompleteMethodName: 
+    onCompleteParmType: 0
+    onCompleteParmColor: {r: 0, g: 0, b: 0, a: 1}
+    onCompleteParmNumber: 0
+    onCompleteParmObject: {fileID: 0}
+    onCompleteParmQuaternion: {x: 0, y: 0, z: 0, w: 0}
+    onCompleteParmRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    onCompleteParmString: 
+    onCompleteParmVector2: {x: 0, y: 0}
+    onCompleteParmVector3: {x: 0, y: 0, z: 0}
+    onCompleteParmVector4: {x: 0, y: 0, z: 0, w: 0}
+  - _targetType: UnityEngine.Transform, UnityEngine
+    target: {fileID: 1390764655}
+    targetRoot: {fileID: 1390764654}
+    _targetPath: Morcego.transform
+    targetName: transform
+    foldout: 1
+    isActive: 1
+    creationTime: 4
+    propDatas:
+    - _propType: UnityEngine.Vector3, UnityEngine
+      _pluginType: Holoville.HOTween.Plugins.PlugVector3Y, HOTween
+      _valueType: System.Single, mscorlib
+      propName: localPosition
+      shortPropType: Vector3
+      isRelative: 1
+      isActive: 1
+      endValVector2: {x: 0, y: 0}
+      endValVector3: {x: 0, y: 0, z: 0}
+      endValVector4: {x: 0, y: 0, z: 0, w: 0}
+      endValFloat: 50
+      endValInt: 0
+      endValString: 
+      endValColor: {r: 1, g: 1, b: 1, a: 1}
+      endValRect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 0
+        height: 0
+    duration: .330000013
+    tweenFrom: 0
+    paused: 1
+    autoKill: 0
+    updateType: 0
+    delay: 9
+    id: P1Q2
+    loopType: 1
+    loops: 3
     timeScale: 1
     easeType: 5
     animationCurve:
@@ -10267,7 +12351,7 @@ MonoBehaviour:
   globalDelay: 0
   globalTimeScale: 1
   sortMode: 0
-  creationTime: 3
+  creationTime: 4
   destroyAfterSetup: 0
 --- !u!1 &1437595835
 GameObject:
@@ -10664,7 +12748,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 501588171}
-  m_RootOrder: 5
+  m_RootOrder: 6
 --- !u!114 &1444786459
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10760,13 +12844,13 @@ MonoBehaviour:
         height: 0
     duration: 1
     tweenFrom: 1
-    paused: 0
-    autoKill: 1
+    paused: 1
+    autoKill: 0
     updateType: 0
     delay: 8.5
     id: P1Q2
     loopType: 1
-    loops: 1
+    loops: 2
     timeScale: 1
     easeType: 5
     animationCurve:
@@ -10834,8 +12918,8 @@ MonoBehaviour:
         height: 0
     duration: 1
     tweenFrom: 1
-    paused: 0
-    autoKill: 1
+    paused: 1
+    autoKill: 0
     updateType: 0
     delay: 8.5
     id: P1Q2
@@ -10858,7 +12942,7 @@ MonoBehaviour:
         tangentMode: 0
       m_PreInfinity: 2
       m_PostInfinity: 2
-    onCompleteActionType: 4
+    onCompleteActionType: 0
     onCompletePlayId: 
     onCompleteTarget: {fileID: 8404431}
     onCompleteMethodName: Play
@@ -11224,11 +13308,11 @@ MonoBehaviour:
         height: 0
     duration: 1
     tweenFrom: 0
-    paused: 0
-    autoKill: 1
+    paused: 1
+    autoKill: 0
     updateType: 0
     delay: 6
-    id: 
+    id: P1Q1
     loopType: 0
     loops: 1
     timeScale: 1
@@ -11271,198 +13355,6 @@ MonoBehaviour:
   globalTimeScale: 1
   sortMode: 0
   creationTime: 2
-  destroyAfterSetup: 1
---- !u!1 &1482216696
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 1482216697}
-  - 114: {fileID: 1482216698}
-  - 114: {fileID: 1482216699}
-  m_Layer: 0
-  m_Name: Fumaca
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1482216697
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1482216696}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 206.000015, y: -204, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 501588171}
-  m_RootOrder: 3
---- !u!114 &1482216698
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1482216696}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e96b31ce75e592f45a1cff563a4869db, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  leftAnchor:
-    target: {fileID: 0}
-    relative: 0
-    absolute: 0
-  rightAnchor:
-    target: {fileID: 0}
-    relative: 1
-    absolute: 0
-  bottomAnchor:
-    target: {fileID: 0}
-    relative: 0
-    absolute: 0
-  topAnchor:
-    target: {fileID: 0}
-    relative: 1
-    absolute: 0
-  updateAnchors: 1
-  mColor: {r: 1, g: 1, b: 1, a: 1}
-  mPivot: 4
-  mWidth: 554
-  mHeight: 216
-  mDepth: 3
-  autoResizeBoxCollider: 0
-  hideIfOffScreen: 0
-  keepAspectRatio: 0
-  aspectRatio: 2.56481481
-  mType: 3
-  mFillDirection: 0
-  mFillAmount: 1
-  mInvert: 1
-  mFlip: 0
-  centerType: 1
-  leftType: 1
-  rightType: 1
-  bottomType: 1
-  topType: 1
-  mSprite: {fileID: 21300008, guid: 2f0f134b8d7302949a6bf7ed30f88661, type: 3}
-  mMat: {fileID: 0}
-  mShader: {fileID: 4800000, guid: 4452ae9431d4963409d269d31d79c83d, type: 3}
-  mBorder: {x: 0, y: 0, z: 0, w: 0}
-  nextSprite: {fileID: 0}
---- !u!114 &1482216699
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1482216696}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 05f1b1516c6174942a3dcd70a1d59428, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  tweenDatas:
-  - _targetType: UI2DSprite, Assembly-CSharp
-    target: {fileID: 1482216698}
-    targetRoot: {fileID: 1482216696}
-    _targetPath: Fumaca.UI2DSprite
-    targetName: UI2DSprite
-    foldout: 1
-    isActive: 1
-    creationTime: 1
-    propDatas:
-    - _propType: System.Single, mscorlib
-      _pluginType: Holoville.HOTween.Plugins.Core.PlugFloat, HOTween
-      _valueType: System.Single, mscorlib
-      propName: alpha
-      shortPropType: Single
-      isRelative: 0
-      isActive: 1
-      endValVector2: {x: 0, y: 0}
-      endValVector3: {x: 0, y: 0, z: 0}
-      endValVector4: {x: 0, y: 0, z: 0, w: 0}
-      endValFloat: 0
-      endValInt: 0
-      endValString: 
-      endValColor: {r: 1, g: 1, b: 1, a: 1}
-      endValRect:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 0
-        height: 0
-    - _propType: System.Single, mscorlib
-      _pluginType: Holoville.HOTween.Plugins.Core.PlugFloat, HOTween
-      _valueType: System.Single, mscorlib
-      propName: fillAmount
-      shortPropType: Single
-      isRelative: 0
-      isActive: 1
-      endValVector2: {x: 0, y: 0}
-      endValVector3: {x: 0, y: 0, z: 0}
-      endValVector4: {x: 0, y: 0, z: 0, w: 0}
-      endValFloat: 0
-      endValInt: 0
-      endValString: 
-      endValColor: {r: 1, g: 1, b: 1, a: 1}
-      endValRect:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 0
-        height: 0
-    duration: 1
-    tweenFrom: 1
-    paused: 0
-    autoKill: 1
-    updateType: 0
-    delay: 9
-    id: P1Q2
-    loopType: 0
-    loops: 1
-    timeScale: 1
-    easeType: 5
-    animationCurve:
-      serializedVersion: 2
-      m_Curve:
-      - time: 0
-        value: 0
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 0
-      - time: 1
-        value: 1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 0
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-    onCompleteActionType: 0
-    onCompletePlayId: 
-    onCompleteTarget: {fileID: 8404431}
-    onCompleteMethodName: Play
-    onCompleteParmType: 0
-    onCompleteParmColor: {r: 0, g: 0, b: 0, a: 1}
-    onCompleteParmNumber: 0
-    onCompleteParmObject: {fileID: 0}
-    onCompleteParmQuaternion: {x: 0, y: 0, z: 0, w: 0}
-    onCompleteParmRect:
-      serializedVersion: 2
-      x: 0
-      y: 0
-      width: 0
-      height: 0
-    onCompleteParmString: 
-    onCompleteParmVector2: {x: 0, y: 0}
-    onCompleteParmVector3: {x: 0, y: 0, z: 0}
-    onCompleteParmVector4: {x: 0, y: 0, z: 0, w: 0}
-  globalDelay: 0
-  globalTimeScale: 1
-  sortMode: 0
-  creationTime: 1
   destroyAfterSetup: 0
 --- !u!1 &1496553491
 GameObject:
@@ -12242,15 +14134,15 @@ MonoBehaviour:
         height: 0
     duration: 1
     tweenFrom: 1
-    paused: 0
-    autoKill: 1
+    paused: 1
+    autoKill: 0
     updateType: 0
     delay: 3
     id: P1Q1
     loopType: 0
     loops: 1
     timeScale: 1
-    easeType: 5
+    easeType: 0
     animationCurve:
       serializedVersion: 2
       m_Curve:
@@ -12292,7 +14184,7 @@ MonoBehaviour:
     targetName: UI2DSprite
     foldout: 1
     isActive: 1
-    creationTime: 10
+    creationTime: 11
     propDatas:
     - _propType: UnityEngine.Color, UnityEngine
       _pluginType: Holoville.HOTween.Plugins.Core.PlugColor, HOTween
@@ -12320,7 +14212,7 @@ MonoBehaviour:
     autoKill: 1
     updateType: 0
     delay: 6
-    id: P1Q1
+    id: 
     loopType: 0
     loops: 1
     timeScale: 1
@@ -12362,7 +14254,7 @@ MonoBehaviour:
   globalDelay: 0
   globalTimeScale: 1
   sortMode: 0
-  creationTime: 10
+  creationTime: 11
   destroyAfterSetup: 0
 --- !u!82 &1595920410
 AudioSource:
@@ -13194,7 +15086,7 @@ MonoBehaviour:
       endValFloat: 0
       endValInt: 0
       endValString: 
-      endValColor: {r: .147058845, g: .147058845, b: .147058845, a: 1}
+      endValColor: {r: 0, g: 0, b: 0, a: 1}
       endValRect:
         serializedVersion: 2
         x: 0
@@ -13203,8 +15095,8 @@ MonoBehaviour:
         height: 0
     duration: 1
     tweenFrom: 1
-    paused: 0
-    autoKill: 1
+    paused: 1
+    autoKill: 0
     updateType: 0
     delay: 7
     id: P1Q1
@@ -14780,7 +16672,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1915849475
 Transform:
   m_ObjectHideFlags: 0
@@ -14845,7 +16737,7 @@ MonoBehaviour:
   alwaysOnScreen: 0
   anchorOffset: 0
   renderQueue: 0
-  startingRenderQueue: 3006
+  startingRenderQueue: 3011
   mAlpha: 1
   mClipping: 0
   mClipRange: {x: 0, y: 0, z: 300, w: 200}
@@ -15541,7 +17433,7 @@ MonoBehaviour:
       endValFloat: 0
       endValInt: 0
       endValString: 
-      endValColor: {r: .147058845, g: .147058845, b: .147058845, a: 1}
+      endValColor: {r: 0, g: 0, b: 0, a: 1}
       endValRect:
         serializedVersion: 2
         x: 0
@@ -15550,8 +17442,8 @@ MonoBehaviour:
         height: 0
     duration: 1
     tweenFrom: 1
-    paused: 0
-    autoKill: 1
+    paused: 1
+    autoKill: 0
     updateType: 0
     delay: 7
     id: P1Q1
@@ -16054,7 +17946,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &2114536182
 Transform:
   m_ObjectHideFlags: 0
@@ -16105,7 +17997,7 @@ MonoBehaviour:
   alwaysOnScreen: 0
   anchorOffset: 0
   renderQueue: 0
-  startingRenderQueue: 3004
+  startingRenderQueue: 3001
   mAlpha: 1
   mClipping: 0
   mClipRange: {x: 0, y: 0, z: 300, w: 200}
@@ -16171,11 +18063,11 @@ MonoBehaviour:
         height: 0
     duration: .5
     tweenFrom: 1
-    paused: 0
-    autoKill: 1
+    paused: 1
+    autoKill: 0
     updateType: 0
-    delay: 0
-    id: 
+    delay: 1
+    id: P1Q1
     loopType: 0
     loops: 1
     timeScale: 1
@@ -16218,4 +18110,4 @@ MonoBehaviour:
   globalTimeScale: 1
   sortMode: 0
   creationTime: 1
-  destroyAfterSetup: 1
+  destroyAfterSetup: 0
