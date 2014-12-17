@@ -17,6 +17,7 @@ public class TweenAudio : MonoBehaviour {
     }
 
     public void Play () {
+        Debug.Log("Playing audio...");
         MySource.Play();
     }
 
