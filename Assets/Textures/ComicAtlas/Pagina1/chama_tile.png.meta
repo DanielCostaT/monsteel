@@ -1,0 +1,267 @@
+fileFormatVersion: 2
+guid: 84dcd7c0f90275b4dac9c462939bffb0
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: chama_tile_0
+    21300002: chama_tile_1
+    21300004: chama_tile_2
+    21300006: chama_tile_3
+    21300008: chama_tile_4
+    21300010: chama_tile_5
+    21300012: chama_tile_6
+    21300014: chama_tile_7
+    21300016: chama_tile_8
+    21300018: chama_tile_9
+    21300020: chama_tile_10
+    21300022: chama_tile_11
+    21300024: chama_tile_12
+    21300026: chama_tile_13
+    21300028: chama_tile_14
+    21300030: chama_tile_15
+    21300032: chama_tile_16
+    21300034: chama_tile_17
+    21300036: chama_tile_18
+    21300038: chama_tile_19
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 5
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: chama_tile_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 900
+        width: 75
+        height: 225
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: chama_tile_1
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 900
+        width: 75
+        height: 225
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: chama_tile_2
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 900
+        width: 75
+        height: 225
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: chama_tile_3
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 900
+        width: 75
+        height: 225
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: chama_tile_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 675
+        width: 75
+        height: 225
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: chama_tile_5
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 675
+        width: 75
+        height: 225
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: chama_tile_6
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 675
+        width: 75
+        height: 225
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: chama_tile_7
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 675
+        width: 75
+        height: 225
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: chama_tile_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 450
+        width: 75
+        height: 225
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: chama_tile_9
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 450
+        width: 75
+        height: 225
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: chama_tile_10
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 450
+        width: 75
+        height: 225
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: chama_tile_11
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 450
+        width: 75
+        height: 225
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: chama_tile_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 225
+        width: 75
+        height: 225
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: chama_tile_13
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 225
+        width: 75
+        height: 225
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: chama_tile_14
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 225
+        width: 75
+        height: 225
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: chama_tile_15
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 225
+        width: 75
+        height: 225
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: chama_tile_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 75
+        height: 225
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: chama_tile_17
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 0
+        width: 75
+        height: 225
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: chama_tile_18
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 0
+        width: 75
+        height: 225
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: chama_tile_19
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 0
+        width: 75
+        height: 225
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
