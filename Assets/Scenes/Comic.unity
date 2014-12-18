@@ -145,7 +145,7 @@ ParticleSystem:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1693983}
-  lengthInSec: 1.5
+  lengthInSec: 2
   startDelay: 0
   speed: 1
   randomSeed: 0
@@ -156,7 +156,7 @@ ParticleSystem:
   InitialModule:
     enabled: 1
     startLifetime:
-      scalar: .600000024
+      scalar: .800000012
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -171,7 +171,7 @@ ParticleSystem:
         serializedVersion: 2
         m_Curve:
         - time: 0
-          value: .5
+          value: .375
           inSlope: 0
           outSlope: 0
           tangentMode: 0
@@ -179,7 +179,7 @@ ParticleSystem:
         m_PostInfinity: 2
       minMaxState: 3
     startSpeed:
-      scalar: 9
+      scalar: 12
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -194,7 +194,7 @@ ParticleSystem:
         serializedVersion: 2
         m_Curve:
         - time: 0
-          value: .666666687
+          value: .583333313
           inSlope: 0
           outSlope: 0
           tangentMode: 0
@@ -296,7 +296,7 @@ ParticleSystem:
         rgba: 4294967295
       minMaxState: 0
     startSize:
-      scalar: .5
+      scalar: 1
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -311,7 +311,7 @@ ParticleSystem:
         serializedVersion: 2
         m_Curve:
         - time: 0
-          value: .200000003
+          value: .200000018
           inSlope: 0
           outSlope: 0
           tangentMode: 0
@@ -383,7 +383,7 @@ ParticleSystem:
         m_PreInfinity: 2
         m_PostInfinity: 2
       minMaxState: 0
-    cnt0: 20
+    cnt0: 40
     cnt1: 30
     cnt2: 30
     cnt3: 30
@@ -471,7 +471,7 @@ ParticleSystem:
           rgba: 4294967295
         key1:
           serializedVersion: 2
-          rgba: 2155313014
+          rgba: 2157747356
         key2:
           serializedVersion: 2
           rgba: 255
@@ -1663,7 +1663,7 @@ AudioSource:
   serializedVersion: 3
   m_audioClip: {fileID: 8300000, guid: e684d0171a22587438ece509334d0ca9, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: .300000012
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -3478,7 +3478,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &226186669
 Transform:
   m_ObjectHideFlags: 0
@@ -13007,7 +13007,7 @@ MonoBehaviour:
     paused: 1
     autoKill: 0
     updateType: 0
-    delay: 9.30000019
+    delay: 8.80000019
     id: P1Q2
     loopType: 0
     loops: 1
@@ -13155,7 +13155,7 @@ MonoBehaviour:
     paused: 1
     autoKill: 0
     updateType: 0
-    delay: 9.30000019
+    delay: 8.80000019
     id: P1Q2
     loopType: 1
     loops: 2
@@ -13229,7 +13229,7 @@ MonoBehaviour:
     paused: 1
     autoKill: 0
     updateType: 0
-    delay: 9.30000019
+    delay: 8.80000019
     id: P1Q2
     loopType: 0
     loops: 1
@@ -15909,6 +15909,8 @@ GameObject:
   - 4: {fileID: 1390764655}
   - 114: {fileID: 1390764656}
   - 114: {fileID: 1390764657}
+  - 82: {fileID: 1390764659}
+  - 114: {fileID: 1390764658}
   m_Layer: 0
   m_Name: Morcego
   m_TagString: Untagged
@@ -16021,6 +16023,26 @@ MonoBehaviour:
         y: 0
         width: 0
         height: 0
+    - _propType: UnityEngine.Quaternion, UnityEngine
+      _pluginType: Holoville.HOTween.Plugins.PlugQuaternion, HOTween
+      _valueType: UnityEngine.Vector3, UnityEngine
+      propName: localRotation
+      shortPropType: Quaternion
+      isRelative: 0
+      isActive: 1
+      endValVector2: {x: 0, y: 0}
+      endValVector3: {x: 0, y: 0, z: 44}
+      endValVector4: {x: 0, y: 0, z: 0, w: 0}
+      endValFloat: 0
+      endValInt: 0
+      endValString: 
+      endValColor: {r: 1, g: 1, b: 1, a: 1}
+      endValRect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 0
+        height: 0
     - _propType: UnityEngine.Vector3, UnityEngine
       _pluginType: Holoville.HOTween.Plugins.Core.PlugVector3, HOTween
       _valueType: UnityEngine.Vector3, UnityEngine
@@ -16043,10 +16065,10 @@ MonoBehaviour:
         height: 0
     duration: 1
     tweenFrom: 1
-    paused: 0
+    paused: 1
     autoKill: 0
     updateType: 0
-    delay: 9
+    delay: 8.60000038
     id: P1Q2
     loopType: 0
     loops: 1
@@ -16120,7 +16142,7 @@ MonoBehaviour:
     paused: 1
     autoKill: 0
     updateType: 0
-    delay: 9
+    delay: 8.60000038
     id: P1Q2
     loopType: 0
     loops: 1
@@ -16189,17 +16211,17 @@ MonoBehaviour:
         y: 0
         width: 0
         height: 0
-    duration: .330000013
+    duration: .200000003
     tweenFrom: 0
     paused: 1
     autoKill: 0
     updateType: 0
-    delay: 9
+    delay: 8.60000038
     id: P1Q2
     loopType: 1
-    loops: 3
+    loops: 5
     timeScale: 1
-    easeType: 5
+    easeType: 9
     animationCurve:
       serializedVersion: 2
       m_Curve:
@@ -16239,6 +16261,75 @@ MonoBehaviour:
   sortMode: 0
   creationTime: 6
   destroyAfterSetup: 0
+--- !u!114 &1390764658
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1390764654}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b1d1781db90ea714fa71e17a56b2d4e6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!82 &1390764659
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1390764654}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_audioClip: {fileID: 8300000, guid: 0a8c0f0d026a6624d88de945444bfa95, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: .910000026
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
 --- !u!1 &1437595835
 GameObject:
   m_ObjectHideFlags: 0
@@ -16738,7 +16829,7 @@ MonoBehaviour:
     loopType: 1
     loops: 2
     timeScale: 1
-    easeType: 5
+    easeType: 11
     animationCurve:
       serializedVersion: 2
       m_Curve:
@@ -16812,7 +16903,7 @@ MonoBehaviour:
     loopType: 0
     loops: 1
     timeScale: 1
-    easeType: 23
+    easeType: 17
     animationCurve:
       serializedVersion: 2
       m_Curve:
@@ -18152,7 +18243,7 @@ AudioSource:
   serializedVersion: 3
   m_audioClip: {fileID: 8300000, guid: cdea98f32bdc17348a6829981af82e80, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: .681999981
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -20063,7 +20154,7 @@ MonoBehaviour:
         y: 0
         width: 0
         height: 0
-    duration: 1
+    duration: .100000001
     tweenFrom: 0
     paused: 1
     autoKill: 1
@@ -20089,10 +20180,10 @@ MonoBehaviour:
         tangentMode: 0
       m_PreInfinity: 2
       m_PostInfinity: 2
-    onCompleteActionType: 0
+    onCompleteActionType: 4
     onCompletePlayId: 
-    onCompleteTarget: {fileID: 0}
-    onCompleteMethodName: 
+    onCompleteTarget: {fileID: 1390764654}
+    onCompleteMethodName: Play
     onCompleteParmType: 0
     onCompleteParmColor: {r: 0, g: 0, b: 0, a: 1}
     onCompleteParmNumber: 0
@@ -23166,6 +23257,7 @@ GameObject:
   - 114: {fileID: 2114536183}
   - 54: {fileID: 2114536184}
   - 114: {fileID: 2114536185}
+  - 82: {fileID: 2114536186}
   m_Layer: 0
   m_Name: Page1
   m_TagString: Untagged
@@ -23338,3 +23430,61 @@ MonoBehaviour:
   sortMode: 0
   creationTime: 1
   destroyAfterSetup: 0
+--- !u!82 &2114536186
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2114536181}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_audioClip: {fileID: 8300000, guid: dd52072322390e542901f53de8bfd297, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: .213
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
