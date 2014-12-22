@@ -4,6 +4,6 @@ using Holoville.HOTween;
 
 public class TweenInteractionTrigger : MonoBehaviour {
     void OnClick () {
-        HOTween.Play();
+        TestGroupTweenByID.instance.OnButtonClick(gameObject.name);
     }
 }

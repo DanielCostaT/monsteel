@@ -2,20 +2,19 @@ fileFormatVersion: 2
 guid: 2f0f134b8d7302949a6bf7ed30f88661
 TextureImporter:
   fileIDToRecycleName:
-    21300000: Balao1_Q1P1
-    21300002: Balao1_Q2P1
-    21300004: Puf_Q2P1
-    21300006: Morcego_Q2P1
-    21300008: Fumaca_Q2P1
-    21300010: Vela2_Q1P1
-    21300012: Vela1_Q1P1
-    21300014: Vela1_Q2P1
-    21300016: Vela2_Q2P1
-    21300018: Vela1_Q2_P1
+    21300000: P1_Q1_Balao
+    21300002: P1_Q2_Puf
+    21300004: P1_Q1_Fio
+    21300006: P1_Q1_Aranha
+    21300008: P1_Q2_Vela
+    21300010: P1_Q1_VelaFraca
+    21300012: P1_Q1_VelaForte
+    21300014: P1_Q2_Balao
+    21300016: P1_Q2_Morcego
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
-    enableMipMap: 0
+    enableMipMap: 1
     linearTexture: 0
     correctGamma: 0
     fadeOut: 0
@@ -31,11 +30,11 @@ TextureImporter:
   grayScaleToAlpha: 0
   generateCubemap: 0
   seamlessCubemap: 0
-  textureFormat: 12
+  textureFormat: -1
   maxTextureSize: 1024
   textureSettings:
     filterMode: -1
-    aniso: 1
+    aniso: 16
     mipBias: -1
     wrapMode: 1
   nPOTScale: 0
@@ -49,87 +48,97 @@ TextureImporter:
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spritePixelsToUnits: 100
   alphaIsTransparency: 1
-  textureType: 5
+  textureType: 8
   buildTargetSettings: []
   spriteSheet:
     sprites:
-    - name: Balao1_Q1P1
+    - name: P1_Q1_Balao
       rect:
         serializedVersion: 2
         x: 1
         y: 852
-        width: 247
-        height: 172
+        width: 248
+        height: 173
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Balao1_Q2P1
+    - name: P1_Q2_Puf
       rect:
         serializedVersion: 2
-        x: 247
-        y: 784
-        width: 514
-        height: 240
-      alignment: 0
-      pivot: {x: .5, y: .5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Puf_Q2P1
-      rect:
-        serializedVersion: 2
-        x: 800
+        x: 799
         y: 870
-        width: 179
-        height: 137
+        width: 181
+        height: 139
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Morcego_Q2P1
+    - name: P1_Q1_Fio
       rect:
         serializedVersion: 2
-        x: 675
-        y: 588
-        width: 345
-        height: 196
+        x: 628
+        y: 592
+        width: 8
+        height: 141
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Fumaca_Q2P1
+    - name: P1_Q1_Aranha
       rect:
         serializedVersion: 2
-        x: 0
-        y: 567
-        width: 554
-        height: 216
+        x: 565
+        y: 590
+        width: 45
+        height: 68
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Vela2_Q1P1
+    - name: P1_Q2_Vela
       rect:
         serializedVersion: 2
-        x: 447
+        x: 854
         y: 0
-        width: 415
-        height: 563
+        width: 170
+        height: 557
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Vela1_Q1P1
+    - name: P1_Q1_VelaFraca
       rect:
         serializedVersion: 2
-        x: 21
+        x: 465
         y: 0
-        width: 415
-        height: 563
+        width: 374
+        height: 576
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Vela1_Q2_P1
+    - name: P1_Q1_VelaForte
       rect:
         serializedVersion: 2
-        x: 849
-        y: 0
-        width: 175
-        height: 539
+        x: 55
+        y: 11
+        width: 362
+        height: 565
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: P1_Q2_Balao
+      rect:
+        serializedVersion: 2
+        x: 249
+        y: 783
+        width: 522
+        height: 242
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: P1_Q2_Morcego
+      rect:
+        serializedVersion: 2
+        x: 665
+        y: 577
+        width: 358
+        height: 212
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
