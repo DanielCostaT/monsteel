@@ -109,11 +109,12 @@ PlayerSettings:
   m_BuildTargetIcons:
   - m_BuildTarget: 
     m_Icons:
-    - m_Icon: {fileID: 2800000, guid: 79b6c6ccbd0102445824ca8dca86c953, type: 3}
+    - m_Icon: {fileID: 2800000, guid: a5f2c1c5b49e24f0aa7990fa9947b225, type: 3}
       m_Size: 128
   m_BuildTargetBatching: []
   webPlayerTemplate: APPLICATION:Default
   m_TemplateCustomTags: {}
+  locationUsageDescription: 
   XboxTitleId: 
   XboxImageXexPath: 
   XboxSpaPath: 
