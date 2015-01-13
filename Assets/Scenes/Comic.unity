@@ -2515,6 +2515,7 @@ GameObject:
   - 114: {fileID: 112280629}
   - 65: {fileID: 112280628}
   - 114: {fileID: 112280627}
+  - 114: {fileID: 112280630}
   m_Layer: 0
   m_Name: SmokeFXInteraction
   m_TagString: Untagged
@@ -2528,12 +2529,12 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 112280625}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 349, y: -204, z: 0}
+  m_LocalRotation: {x: .707106829, y: 0, z: 0, w: .707106829}
+  m_LocalPosition: {x: -12285, y: 829.999695, z: 646.000183}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 501588171}
-  m_RootOrder: 6
+  m_Father: {fileID: 1658898422}
+  m_RootOrder: 0
 --- !u!114 &112280627
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2551,7 +2552,7 @@ BoxCollider:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 112280625}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 1709409256}
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
@@ -2585,7 +2586,7 @@ MonoBehaviour:
     relative: 1
     absolute: 0
   updateAnchors: 1
-  mColor: {r: 1, g: 1, b: 1, a: .0117647061}
+  mColor: {r: 1, g: 1, b: 1, a: 0}
   mPivot: 4
   mWidth: 136
   mHeight: 136
@@ -2609,6 +2610,97 @@ MonoBehaviour:
   mShader: {fileID: 4800000, guid: e75727d9555d9d14ca51d91908c681bc, type: 3}
   mBorder: {x: 0, y: 0, z: 0, w: 0}
   nextSprite: {fileID: 0}
+--- !u!114 &112280630
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 112280625}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05f1b1516c6174942a3dcd70a1d59428, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tweenDatas:
+  - _targetType: UI2DSprite, Assembly-CSharp
+    target: {fileID: 112280629}
+    targetRoot: {fileID: 112280625}
+    _targetPath: SmokeFXInteraction.UI2DSprite
+    targetName: UI2DSprite
+    foldout: 1
+    isActive: 1
+    creationTime: 2
+    propDatas:
+    - _propType: System.Single, mscorlib
+      _pluginType: Holoville.HOTween.Plugins.Core.PlugFloat, HOTween
+      _valueType: System.Single, mscorlib
+      propName: alpha
+      shortPropType: Single
+      isRelative: 0
+      isActive: 1
+      endValVector2: {x: 0, y: 0}
+      endValVector3: {x: 0, y: 0, z: 0}
+      endValVector4: {x: 0, y: 0, z: 0, w: 0}
+      endValFloat: .00999999978
+      endValInt: 0
+      endValString: 
+      endValColor: {r: 1, g: 1, b: 1, a: 1}
+      endValRect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 0
+        height: 0
+    duration: .100000001
+    tweenFrom: 0
+    paused: 1
+    autoKill: 0
+    updateType: 0
+    delay: 8.5
+    id: P1Q1
+    loopType: 0
+    loops: 1
+    timeScale: 1
+    easeType: 5
+    animationCurve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - time: 1
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    onCompleteActionType: 4
+    onCompletePlayId: 
+    onCompleteTarget: {fileID: 881292088}
+    onCompleteMethodName: PauseNextTweens
+    onCompleteParmType: 0
+    onCompleteParmColor: {r: 0, g: 0, b: 0, a: 1}
+    onCompleteParmNumber: 0
+    onCompleteParmObject: {fileID: 0}
+    onCompleteParmQuaternion: {x: 0, y: 0, z: 0, w: 0}
+    onCompleteParmRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    onCompleteParmString: 
+    onCompleteParmVector2: {x: 0, y: 0}
+    onCompleteParmVector3: {x: 0, y: 0, z: 0}
+    onCompleteParmVector4: {x: 0, y: 0, z: 0, w: 0}
+  globalDelay: 0
+  globalTimeScale: 1
+  sortMode: 0
+  creationTime: 2
+  destroyAfterSetup: 0
 --- !u!1 &133124331
 GameObject:
   m_ObjectHideFlags: 0
@@ -7019,7 +7111,6 @@ Transform:
   - {fileID: 1055439390}
   - {fileID: 1693984}
   - {fileID: 1026394330}
-  - {fileID: 112280626}
   - {fileID: 1390764655}
   - {fileID: 1444786458}
   - {fileID: 1216107515}
@@ -11851,7 +11942,7 @@ MonoBehaviour:
     paused: 1
     autoKill: 0
     updateType: 0
-    delay: 8
+    delay: 7.5
     id: P1Q1
     loopType: 0
     loops: 1
@@ -13929,7 +14020,7 @@ MonoBehaviour:
     paused: 1
     autoKill: 0
     updateType: 0
-    delay: 8.5
+    delay: 7.5999999
     id: P1Q1
     loopType: 0
     loops: 1
@@ -13950,7 +14041,7 @@ MonoBehaviour:
         tangentMode: 0
       m_PreInfinity: 2
       m_PostInfinity: 2
-    onCompleteActionType: 4
+    onCompleteActionType: 0
     onCompletePlayId: 
     onCompleteTarget: {fileID: 881292088}
     onCompleteMethodName: PauseNextTweens
@@ -15010,7 +15101,7 @@ Transform:
   - {fileID: 703026571}
   - {fileID: 920659841}
   m_Father: {fileID: 501588171}
-  m_RootOrder: 9
+  m_RootOrder: 8
 --- !u!114 &1216107516
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17013,7 +17104,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 501588171}
-  m_RootOrder: 7
+  m_RootOrder: 6
 --- !u!114 &1390764656
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17811,7 +17902,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 501588171}
-  m_RootOrder: 8
+  m_RootOrder: 7
 --- !u!114 &1444786459
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20245,7 +20336,8 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -3, y: 568.000305, z: 109.000084}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 112280626}
   m_Father: {fileID: 1026394330}
   m_RootOrder: 0
 --- !u!199 &1658898423
@@ -21355,7 +21447,7 @@ MonoBehaviour:
     paused: 1
     autoKill: 0
     updateType: 0
-    delay: 8.39999962
+    delay: 7.5
     id: P1Q1
     loopType: 0
     loops: 1
@@ -21816,7 +21908,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: b2479806a5197aa4eb18018532ae8e9c, type: 2}
       propertyPath: m_RootOrder
-      value: 2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: b2479806a5197aa4eb18018532ae8e9c, type: 2}
       propertyPath: m_LocalScale.y
@@ -22189,6 +22281,20 @@ MonoBehaviour:
   callWhenFinished: 
   from: {r: .29411763, g: .29411763, b: .29411763, a: 1}
   to: {r: 1, g: 1, b: 1, a: 1}
+--- !u!134 &1709409256
+PhysicMaterial:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Default (Instance)
+  dynamicFriction: .400000006
+  staticFriction: .400000006
+  bounciness: 0
+  frictionCombine: 0
+  bounceCombine: 0
+  frictionDirection2: {x: 0, y: 0, z: 0}
+  dynamicFriction2: 0
+  staticFriction2: 0
 --- !u!1 &1722109436
 GameObject:
   m_ObjectHideFlags: 0
@@ -24961,7 +25067,7 @@ AudioSource:
   serializedVersion: 3
   m_audioClip: {fileID: 8300000, guid: dd52072322390e542901f53de8bfd297, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: .469999999
   m_Pitch: 1
   Loop: 1
   Mute: 0

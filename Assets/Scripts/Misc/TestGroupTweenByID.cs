@@ -108,9 +108,9 @@ public class TestGroupTweenByID : Singleton<TestGroupTweenByID> {
 
     public void OnButtonClick (string button) {
         switch (button) {
-            case "SmokeFXInteraction":
-                nextAnimation.ForEach(i => i.Play());
-                currentAnimation.ForEach(i => i.Play());
+		    case "SmokeFXInteraction":
+				nextAnimation.ForEach(i => i.Play());
+				currentAnimation.ForEach(i => i.Play());
                 break;
             case "SpiderBody":
                 if (currentSpiderState == SpiderState.Idle) {
