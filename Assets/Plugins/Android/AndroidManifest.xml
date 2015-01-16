@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest
     xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.toystalk.monsteelalpha"
+    package="com.toystalk.monsteelcomic"
 	android:installLocation="preferExternal"
 	android:theme="@android:style/Theme.NoTitleBar"
-    android:versionCode="6"
-    android:versionName="0.6a">
+    android:versionCode="1"
+    android:versionName="0.1a">
     <uses-feature android:name="android.hardware.camera" />
     <supports-screens
         android:smallScreens="true"
